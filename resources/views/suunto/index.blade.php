@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="th">
 <head>
-<title>SUUNTO | Home :: SUUNTO</title>
+<title>SUUNTO | ค้นหา</title>
 <!-- custom-theme -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -49,11 +48,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 				<nav class="link-effect-2" id="link-effect-2">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html" ><span data-hover="Home">Home</span></a></li>
-						<li><a href="#about" class="scroll"><span data-hover="About">About</span></a></li>
-						<li><a href="#services" class="scroll"><span data-hover="Services">Services</span></a></li>
-						<li><a href="#events" class="scroll"><span data-hover="Events">Events</span></a></li>
-						<li><a href="#contact" class="scroll"><span data-hover="Contact Us">Contact Us</span></a></li>
+						<li class="active"><a href="index.html" ><span data-hover="หน้าแรก">หน้าแรก</span></a></li>
+						<li><a href="#about" class="scroll"><span data-hover="เกี่ยวกับ">เกี่ยวกับ</span></a></li>
+						<li><a href="#team" class="scroll"><span data-hover="ค้นหาร้านออนไลน์">ค้นหาร้านออนไลน์</span></a></li>
+						<li><a href="#events" class="scroll"><span data-hover="ค้นหาตัวแทนจำหน่าย">ค้นหาตัวแทนจำหน่าย</span></a></li>
+						<li><a href="#contact" class="scroll"><span data-hover="USER GUIDE">USER GUIDE</span></a></li>
 					</ul>
 				</nav>
 			
@@ -193,72 +192,56 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //modal -->
 	<!-- what -->
-	<div class="what-w3ls" id="services">
+	<div class="w3-team banner-bottom " id="team">
 		<div class="container">
-			<h3 class="w3ls_head">ค้นหาร้านออนไลน์</h3>
-			<p class="w3agile">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
-				corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-				<div class="what-grids">
-					<div class="col-md-6 what-grid">
-					<div class="what-agile-info">
-							<h4>Consectetur</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut dignissimos ea est, impedit incidunt, laboriosam consectetur adipisicing elit. Ab aut dignissimos ea est</p>
-						</div>
-						<img src="images/s4.jpg" class="img-responsive" alt=""/>
-					</div>
-					<div class="col-md-6 what-grid1">
-						<div class="what-top">
-							<div class="what-left">
-								<i class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></i>
-							</div>
-							<div class="what-right">
-								<h4>Adipisicing</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut dignissimos ea est, impedit incidunt, laboriosam consectetur adipisicing elit. Ab aut dignissimos ea est</p>
-							</div>
-								<div class="clearfix"></div>
-						</div>
-						<div class="what-top1">
-							<div class="what-left">
-								<i class="glyphicon glyphicon-flash" aria-hidden="true"></i>
-							</div>
-							<div class="what-right">
-								<h4>Dignissimos</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut dignissimos ea est, impedit incidunt, laboriosam consectetur adipisicing elit. Ab aut dignissimos ea est</p>
-							</div>
-								<div class="clearfix"></div>
-						</div>
-						<div class="what-top1">
-							<div class="what-left">
-								<i class="glyphicon glyphicon-fire" aria-hidden="true"></i>
-							</div>
-							<div class="what-right">
-								<h4>Consectetur</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut dignissimos ea est, impedit incidunt, laboriosam consectetur adipisicing elit. Ab aut dignissimos ea est</p>
-							</div>
-								<div class="clearfix"></div>
-						</div>
-					</div>
-						<div class="clearfix"></div>
-				</div>
+		  	<h3 class="w3ls_head" > ค้นหาร้านออนไลน์ </h3>
+			<!--<p class="w3agile"></p>-->
 				<div class="about-info-grids">
-				<div class="col-md-4 col-sm-4 about-info about-info1">
-					<i class="fa fa-info-circle agile-sicon" aria-hidden="true"></i>
-					<h4>how we<span class="head-w3l"> work</span></h4>
-					<div class="h4-underline"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-					</div>
-				<div class="col-md-4 col-sm-4 about-info about-info2">
-					<i class="fa fa-question-circle agile-sicon" aria-hidden="true"></i>
-					<h4>what we <span class="head-w3l"> do</span></h4>
-					<div class="h4-underline"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-					</div>
-				<div class="col-md-4 col-sm-4 about-info about-info3">
-					<i class="fa fa-registered agile-sicon" aria-hidden="true"></i>
-					<h4>why choose<span class="head-w3l"> us</span></h4>
-					<div class="h4-underline"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-					</div>
+				<div class="col-md-4 col-sm-4 ">
+					<br><br>
+					<a href="http://www.11street.co.th/store/MiniMallAction/getMiniMallHome.do?sellerHmpgUrl=suunto"><img src="{{url('images/s1.jpg')}}" class="img-responsive" /></a>
+				</div>
+
+				<div class="col-md-4 col-sm-4">
+					<br><br>
+					<a href="http://www.bananarun.com/catalogsearch/result/?cat=&q=suunto"> <img src="{{url('images/s2.jpg')}}" class="img-responsive" alt=""/></a>
+				</div>
+
+				<div class="col-md-4 col-sm-4">
+					<br><br>
+					<a href="http://www.wemall.com/shop/suunto">	<img src="{{url('images/s3.jpg')}}" class="img-responsive" alt=""/> </a>
+				</div>
+					
+				<div class="col-md-4 col-sm-4">
+				       <br><br>
+					 <a href="http://tsmactive.com/?route=product/isearch&search=suunto&description=true"> 	<img src="{{url('images/s4.jpg')}}" class="img-responsive" alt=""/></a>
+				</div>
+
+				<div class="col-md-4 col-sm-4">
+					<br><br>
+					<a href="https://www.looksi.com/catalog/suunto/">	<img src="{{url('images/s6.jpg')}}" class="img-responsive" alt=""/> </a>
+				</div>
+
+				<div class="col-md-4 col-sm-4">
+					<br><br>
+					<a href="http://www.avarinshop.com/?s=suunto&product_cat=0&post_type=product">		<img src="{{url('images/s7.jpg')}}" class="img-responsive" alt=""/></a>
+				</div>
+
+				<div class="col-md-4 col-sm-4">
+					<br><br>
+					<a href="http://www.lazada.co.th/catalog/?q=suunto">	<img src="{{url('images/s8.jpg')}}" class="img-responsive" alt=""/> </a>
+				</div>
+
+				<div class="col-md-4 col-sm-4">
+					<br><br>
+					<a href="https://www.thepuffinhouse.com/landing">	<img src="{{url('images/s9.jpg')}}" class="img-responsive" alt=""/> </a>
+				</div>
+
+				<div class="col-md-4 col-sm-4">
+				<br><br>
+				<a href="http://shoponline.bananastore.com/loadmore/?producttype=gadget&catename=smartwatch&productcat=activity-tracker">	<img src="{{url('images/s10.jpg')}}" class="img-responsive" alt=""/> </a>
+				</div>
+
 					<div class="clearfix"></div>
 		</div>
 	</div>
@@ -273,23 +256,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="w3-Events-grids">
 			<div class="col-md-3 w3-Events-bg1  w3-Events-heading">
-			   <h3>01<span></span></h3>
-			    <p>กรุงเทพฯและปริมณฑล</p>
-				<a href="#" data-toggle="modal" data-target="#myModal1"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+			   <h3>01<span>ใกล้ BTS</span></h3>
+			    <p>BTS</p>
+				<a href="{{url('/bts')}}"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 			</div>
 			<div class="col-md-3 w3-Events-bg2  w3-Events-heading">
-			   <h3>02<span></span></h3>
-			    <p>จังหวัดอื่นๆ</p>
+			   <h3>02<span>ใกล้ MRT</span></h3>
+			    <p>MRT</p>
 				<a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 			</div>
 			<div class="col-md-3 w3-Events-bg3  w3-Events-heading">
-			   <h3>03<span>SPAIN</span></h3>
-			    <p>COMMERCIAL MODELING</p>
+			   <h3>03<span>ใกล้ ห้าง</span></h3>
+			    <p>CENTER</p>
 				<a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 			</div> 
 			<div class="col-md-3 w3-Events-bg4  w3-Events-heading">
-			   <h3>04<span>AFRICA</span></h3>
-			    <p>PRINT MODELING</p>
+			   <h3>04<span>อื่นๆ</span></h3>
+			    <p>OTHER</p>
 				<a href="#" data-toggle="modal" data-target="#myModal4"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 			</div>
 			<div class="clearfix"></div>
@@ -371,199 +354,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //modal -->
 <!-- //fashion events -->
-<!--Gallery -->
-<div class="gallery" id="gallery">
-	<div class="container">
-	<div class="w3-head-all">
-		<h3 class="w3ls_head">Our Gallery</h3>
-		</div>
-		<div class="agileinfo_work_grids">
-				<div class="col-md-4 w3_agile_work_grid gallery1">
-					<div class="wthree_work_grid1">
-						<a href="images/g1.jpg" class="b-link-stripe b-animate-go  swipebox" title="Fashion">
-							<div class="agile_work_grid w3_agileits_sub_work">
-							<img src="images/g1.jpg" alt=" " class="img-responsive" />
-							<div class="agileits_w3layouts_work">
-								Fashion
-							</div>
-							</div>
-						</a>
-					</div>
-					<div class="wthree_work_grid1">
-						<a href="images/g2.jpg" class="b-link-stripe b-animate-go  swipebox" title="Fashion">
-							<div class="agile_work_grid w3_agileits_sub_work">
-							<img src="images/g2.jpg" alt=" " class="img-responsive" />
-							<div class="agileits_w3layouts_work">
-								Fashion
-							</div>
-							</div>
-						</a>
-					</div>
-					<div class="wthree_work_grid1">
-						<a href="images/g3.jpg" class="b-link-stripe b-animate-go  swipebox" title="Fashion">
-							<div class="agile_work_grid w3_agileits_sub_work">
-							<img src="images/g3.jpg" alt=" " class="img-responsive" />
-							<div class="agileits_w3layouts_work">
-								Fashion
-							</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-4 w3_agile_work_grid">
-					<div class="wthree_work_grid1">
-						<a href="images/g4.jpg" class="b-link-stripe b-animate-go  swipebox" title="Fashion">
-							<div class="agile_work_grid w3_agileits_sub_work">
-							<img src="images/g4.jpg" alt=" " class="img-responsive" />
-							<div class="agileits_w3layouts_work">
-								Fashion
-							</div>
-							</div>
-						</a>
-					</div>
-					<div class="wthree_work_grid1">
-						<a href="images/g5.jpg" class="b-link-stripe b-animate-go  swipebox" title="Fashion">
-							<div class="agile_work_grid w3_agileits_sub_work">
-							<img src="images/g5.jpg" alt=" " class="img-responsive" />
-							<div class="agileits_w3layouts_work">
-								Fashion
-							</div>
-							</div>
-						</a>
-					</div>
-					<div class="wthree_work_grid1">
-						<a href="images/g6.jpg" class="b-link-stripe b-animate-go  swipebox" title="Fashion">
-							<div class="agile_work_grid w3_agileits_sub_work">
-							<img src="images/g6.jpg" alt=" " class="img-responsive" />
-							<div class="agileits_w3layouts_work">
-								Fashion
-							</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-4 w3_agile_work_grid">
-					<div class="wthree_work_grid1">
-						<a href="images/g7.jpg" class="b-link-stripe b-animate-go  swipebox" title="Fashion">
-							<div class="agile_work_grid w3_agileits_sub_work">
-							<img src="images/g7.jpg" alt=" " class="img-responsive" />
-							<div class="agileits_w3layouts_work">
-								Fashion
-							</div>
-							</div>
-						</a>
-					</div>
-					<div class="wthree_work_grid1">
-						<a href="images/g8.jpg" class="b-link-stripe b-animate-go  swipebox" title="Fashion">
-							<div class="agile_work_grid w3_agileits_sub_work">
-							<img src="images/g8.jpg" alt=" " class="img-responsive" />
-							<div class="agileits_w3layouts_work">
-								Fashion
-							</div>
-							</div>
-						</a>
-					</div>
-					<div class="wthree_work_grid1">
-						<a href="images/g9.jpg" class="b-link-stripe b-animate-go  swipebox" title="Fashion">
-							<div class="agile_work_grid w3_agileits_sub_work">
-							<img src="images/g9.jpg" alt=" " class="img-responsive" />
-							<div class="agileits_w3layouts_work">
-								Fashion
-							</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<!---728x90--->
-		</div>
-	</div>	
 
 
-<!-- //Gallery -->
-
-		<!-- team -->
-	<div class="w3-team banner-bottom " id="team">
-		<div class="container">
-			<div class="w3-head-all w3-team-head">
-		           <h3 class="w3ls_head">meet our team</h3>
-		       </div>
-			<div class="w3ls_banner_bottom_grids">
-				<div class="col-md-3 w3_agile_team_grid">
-					<div class="w3layouts_team_grid">
-						<img src="images/tm1.jpg" alt=" " class="img-responsive" />
-						<div class="w3layouts_team_grid_pos">
-							<div class="wthree_text">
-								<ul class="agileits_social_list">
-									<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<h4>travis head</h4>
-					<p>Model</p>
-				</div>
-				<div class="col-md-3 w3_agile_team_grid">
-					<div class="w3layouts_team_grid">
-						<img src="images/tm2.jpg" alt=" " class="img-responsive" />
-						<div class="w3layouts_team_grid_pos">
-							<div class="wthree_text">
-								<ul class="agileits_social_list">
-									<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<h4>tostabo roy</h4>
-					<p>Designer</p>
-				</div>
-				<div class="col-md-3 w3_agile_team_grid">
-					<div class="w3layouts_team_grid">
-						<img src="images/tm3.jpg" alt=" " class="img-responsive" />
-						<div class="w3layouts_team_grid_pos">
-							<div class="wthree_text">
-								<ul class="agileits_social_list">
-									<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<h4>ishan Rich</h4>
-					<p>organiser</p>
-				</div>
-				<div class="col-md-3 w3_agile_team_grid">
-					<div class="w3layouts_team_grid">
-						<img src="images/tm4.jpg" alt=" " class="img-responsive" />
-						<div class="w3layouts_team_grid_pos">
-							<div class="wthree_text">
-								<ul class="agileits_social_list">
-									<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<h4>dhoni Carl</h4>
-					<p>Fashion designer</p>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-<!-- //team -->
 <!-- /form -->
 <div class="w3-contact-form" id="contact">
 	<div class="container">
 	<div class="w3-head-all">
-		         <h3 class="w3ls_head">Contact us</h3>
+		         <h3 class="w3ls_head"> Contact us </h3>
 		       </div>
 <div class="left">
 			<form action="#" method="post" data-toggle="validator">
@@ -692,7 +489,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<div class="copy-right"> 
 		<div class="container">
-			<p>© 2018 fashion Models . All rights reserved | Design by <a href="http://w3layouts.com"> W3layouts.</a></p>
+			<p>© 2018 Suunto . All rights reserved | Design by <a> Intership.</a></p>
 		</div> 
 	</div> 
 	<!-- //footer -->   

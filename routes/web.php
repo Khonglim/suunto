@@ -15,6 +15,20 @@ Route::get('/', function () {
     return view('suunto/index');
 });
 
+Route::get('/bts', function () {
+    return view('suunto/bts');
+});
+
+
+
+
+
+
+
+
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
