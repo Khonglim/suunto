@@ -19,10 +19,11 @@ Route::get('/bts', function () {
     
 });
 
-Route::get('/bts', 'BtsController@BtsShow')->name('BtsShow');
+Route::get('/bts', 'BkkController@BtsShow')->name('bts');
 
+Route::get('/mrt', 'BkkController@MrtShow')->name('mrt');
 
-
+Route::get('/shopping_mall', 'BkkController@ShopShow')->name('shopping_mall');
 
 
 

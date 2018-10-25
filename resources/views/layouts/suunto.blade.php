@@ -32,138 +32,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 </head>	
 <body>
-<!-- banner -->
-	<div class="banner" id="home">
-		<nav class="navbar navbar-default">
-			<div class="navbar-header navbar-left">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			<img src="{{url('images/logo-agency.png')}}" width="100px">
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-				<nav class="link-effect-2" id="link-effect-2">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="{{url('/')}}" ><span data-hover="หน้าแรก">หน้าแรก</span></a></li>
-						
-					</ul>
-				</nav>
-			
-			</div>
-		<!--	<div class="w3_agile_search">
-				<form action="#" method="post">
-					<input type="search" name="Search" placeholder="Search Keywords..." required="" />
-					<input type="submit" value="Search">
-				</form>
-
-			</div> -->
-		</nav>
-		</div>
-
-
-<!-- modal -->
-	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header"> 
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						<h4 class="modal-title">Fashion</h4>
-				</div> 
-				<div class="modal-body">
-					<div class="agileits-w3layouts-info">
-						<img src="images/a2.jpg" alt="" />
-						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper.  Cras tempor massa luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //modal -->
-
-<!-- /fashion events -->
-<div class="w3-team banner-bottom " id="team">
-            <div class="container-fluid">
-                <h3 class="w3ls_head" >ร้านใกล้ BTS</h3>
-                <div class="container">
-                    <div class="row">
+	
+		<div class="loader"></div>
+		
+            <main class="py-4">
+                        @yield('content')
+                    </main>
                     
-            
-                    <div align="center" class=" col-md-12  ">
-                        <button class="btn btn-default filter-button" data-filter="all">Show  All</button>
-                        <button class="btn btn-default filter-button" data-filter="pf-asoke">BTS Asoke Station</button>
-                        <button class="btn btn-default filter-button" data-filter="pf-chidlom">BTS Chidlom Station</button>
-                        <button class="btn btn-default filter-button" data-filter="pf-phrom">BTS Phrom Phong Station</button>
-                        <button class="btn btn-default filter-button" data-filter="pf-phoenimit">BTS Phoenimit Station</button>
-                        <button class="btn btn-default filter-button" data-filter="pf-siam">BTS Siam Station</button>
-                        <button class="btn btn-default filter-button" data-filter="pf-saladaeng">BTS Saladaeng Station</button>
-                        <button class="btn btn-default filter-button" data-filter="pf-victory">BTS Victory Monument Station</button>
-                      </div>
-                    <br/>
-            
-            
-            
-                       
+                    
 
-
-                          @foreach ($dealer as $d )
-                          <div class="gallery_product  col-md-4  filter {{$d->bts_search}}">
-                          <div class="panel panel-danger" >
-                          <div class="panel-heading" align="center">{{$d->store_name}}</div>
-                              <div class="panel-body">
-                                 <p  align="center" class="text-danger"> {{$d->bts}}</p><hr>
-
-                              <p align="center"><i class="glyphicon glyphicon-earphone"></i> {{$d->contact_number}}</p><br>
-                           <p align="center">  <a href="{{$d->facebook}}" ><img src="{{url("images/facebook.png")}}" width="30px" ></a></p>  <br>
-                         <p align="center">  <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#myModal{{$d->id}}">Detail</button></p>
-                          </div>
-                        </div>
-                      </div>
-
-
-                    <div id="myModal{{$d->id}}" class="modal fade" role="dialog">
-                          <div class="modal-dialog modal-lg">
-                        
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <h4 class="modal-title">{{$d->store_name}}</h4>
-                              </div>
-                              <div class="modal-body">
-                                <p><strong>Address</strong> :&nbsp; {{$d->address}} </p> 
-                                <p><strong>Phone</strong> :&nbsp; {{$d->contact_number}}</p>
-                                <p><strong>Store Hours</strong> :&nbsp; {{$d->store_hours}}</p>
-                                <p align="center">  <a href="{{$d->facebook}}" ><img src="{{url("images/facebook.png")}}" width="30px" ></a></p>
-                              <a href="{{$d->directions}}"><strong>Get directions</strong></a>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                              </div>
-                            </div>
-                        
-                          </div>
-                        </div>
-                          @endforeach
-                        
-                        
-            
-                       
-                    </div>
-                </div>
-                       
-			<div class="clearfix"></div>
-                
-</div>
-</div>
-
-<!-- /form -->
-
-<!-- footer -->
-	<div class="footer w3-w3layouts">
+                    <div class="footer w3-w3layouts">
 		<div class="container">
 			<div class="footer-agiletop">
 				<ul>   
@@ -208,7 +86,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<div class="copy-right"> 
 		<div class="container">
-			<p>© 2018 fashion Models . All rights reserved | Design by <a href="http://w3layouts.com"> W3layouts.</a></p>
+                        <p>© 2018 Suunto . All rights reserved | Design by <a> Intership.</a></p>
 		</div> 
 	</div> 
 	<!-- //footer -->   
@@ -299,7 +177,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //here ends scrolling icon -->
 
 
-
+<script type="text/javascript">
+	$(window).load(function() {
+		$(".loader").fadeOut("slow");
+	})
+	</script>
 
 
 
@@ -310,6 +192,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 <style>
+	.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('images/loade.gif') 50% 50% no-repeat rgb(249,249,249);
+}
 .gallery-title
 {
     font-size: 36px;
