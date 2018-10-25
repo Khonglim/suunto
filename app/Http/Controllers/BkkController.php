@@ -49,4 +49,19 @@ class BkkController extends Controller
         return view('suunto/BKK/shopping_mall',$data);
     }
 
+    public function OtherShow()
+    {
+        $dealer = DB::table('dealer')
+                ->where('shopping_mall', '=', ' ')
+                ->where('category', '=', 'กรุงเทพมหานครและปริมณฑล')
+                ->where('status', '=', 'T')
+                ->where('mrt', '=', ' ')
+                ->where('bts', '=', ' ')
+                ->get();
+                $data = array(
+                    'dealer' =>   $dealer
+                );
+
+        return view('suunto/BKK/other',$data);
+    }
 }

@@ -61,6 +61,8 @@
                     
             
                     <div align="center" class=" col-md-12  ">
+
+                     
                         <button class="btn btn-default filter-button" data-filter="all">Show  All</button>
                         <button class="btn btn-default filter-button" data-filter="pf-center">Center One Shopping Plaza</button>
                         <button class="btn btn-default filter-button" data-filter="pf-chaengwattana">Central Chaengwattana</button>

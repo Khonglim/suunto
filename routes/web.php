@@ -25,7 +25,7 @@ Route::get('/mrt', 'BkkController@MrtShow')->name('mrt');
 
 Route::get('/shopping_mall', 'BkkController@ShopShow')->name('shopping_mall');
 
-
+Route::get('/otherBKK', 'BkkController@OtherShow')->name('otherShow');
 
 
 

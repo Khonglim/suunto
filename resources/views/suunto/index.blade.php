@@ -241,87 +241,17 @@
 			<div class="col-md-3 w3-Events-bg4  w3-Events-heading">
 			   <h3>04<span>อื่นๆ</span></h3>
 			    <p>OTHER</p>
-				<a href="#" data-toggle="modal" data-target="#myModal4"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+				<a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 			</div>
+		
 			<div class="clearfix"></div>
 		</div>
 </div>
-<!-- modal -->
-	<div class="modal about-modal fade" id="myModal1" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header"> 
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						<h4 class="modal-title">Fashion Events</h4>
-				</div> 
-				<div class="modal-body">
-					<div class="agileits-w3layouts-info">
-						<img src="images/e11.jpg" alt="" />
-						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper.  Cras tempor massa luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem.</p>
-						<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							    </div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //modal -->
-	<!-- modal -->
-	<div class="modal about-modal fade" id="myModal2" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header"> 
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						<h4 class="modal-title">Fashion Events</h4>
-				</div> 
-				<div class="modal-body">
-					<div class="agileits-w3layouts-info">
-						<img src="images/e22.jpg" alt="" />
-						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper.  Cras tempor massa luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //modal -->
-	<!-- modal -->
-	<div class="modal about-modal fade" id="myModal3" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header"> 
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						<h4 class="modal-title">Fashion Events</h4>
-				</div> 
-				<div class="modal-body">
-					<div class="agileits-w3layouts-info">
-						<img src="images/e33.jpg" alt="" />
-						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper.  Cras tempor massa luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //modal -->
-	<!-- modal -->
-	<div class="modal about-modal fade" id="myModal4" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header"> 
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						<h4 class="modal-title">Fashion Events</h4>
-				</div> 
-				<div class="modal-body">
-					<div class="agileits-w3layouts-info">
-						<img src="images/e44.jpg" alt="" />
-						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper.  Cras tempor massa luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //modal -->
-<!-- //fashion events -->
+
+	
+	
+
+
 
 
 <!-- /form -->
