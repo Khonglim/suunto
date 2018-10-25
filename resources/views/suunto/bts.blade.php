@@ -83,24 +83,82 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!-- //modal -->
-	
-
 
 <!-- /fashion events -->
-<div class="w3-Events" id="events">
-	<div class="w3-head-all">
-		<h3 class="w3ls_head">ค้นหาใกล้ BTS</h3>
-		</div>
-		<div class="w3-Events-grids">
-			
+<div class="w3-team banner-bottom " id="team">
+            <div class="container-fluid">
+                <h3 class="w3ls_head" >ร้านใกล้ BTS</h3>
+                <div class="container">
+                    <div class="row">
+                    
+            
+                    <div align="center" class=" col-md-12  ">
+                        <button class="btn btn-default filter-button" data-filter="all">Show  All</button>
+                        <button class="btn btn-default filter-button" data-filter="pf-asoke">BTS Asoke Station</button>
+                        <button class="btn btn-default filter-button" data-filter="pf-chidlom">BTS Chidlom Station</button>
+                        <button class="btn btn-default filter-button" data-filter="pf-phrom">BTS Phrom Phong Station</button>
+                        <button class="btn btn-default filter-button" data-filter="pf-phoenimit">BTS Phoenimit Station</button>
+                        <button class="btn btn-default filter-button" data-filter="pf-siam">BTS Siam Station</button>
+                        <button class="btn btn-default filter-button" data-filter="pf-saladaeng">BTS Saladaeng Station</button>
+                        <button class="btn btn-default filter-button" data-filter="pf-victory">BTS Victory Monument Station</button>
+                      </div>
+                    <br/>
+            
+            
+            
+                       
+
+
+                          @foreach ($dealer as $d )
+                          <div class="gallery_product  col-md-4  filter {{$d->bts_search}}">
+                          <div class="panel panel-danger" >
+                          <div class="panel-heading" align="center">{{$d->store_name}}</div>
+                              <div class="panel-body">
+                                 <p  align="center" class="text-danger"> {{$d->bts}}</p><hr>
+
+                              <p align="center"><i class="glyphicon glyphicon-earphone"></i> {{$d->contact_number}}</p><br>
+                           <p align="center">  <a href="{{$d->facebook}}" ><img src="{{url("images/facebook.png")}}" width="30px" ></a></p>  <br>
+                         <p align="center">  <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#myModal{{$d->id}}">Detail</button></p>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    <div id="myModal{{$d->id}}" class="modal fade" role="dialog">
+                          <div class="modal-dialog modal-lg">
+                        
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">{{$d->store_name}}</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><strong>Address</strong> :&nbsp; {{$d->address}} </p> 
+                                <p><strong>Phone</strong> :&nbsp; {{$d->contact_number}}</p>
+                                <p><strong>Store Hours</strong> :&nbsp; {{$d->store_hours}}</p>
+                                <p align="center">  <a href="{{$d->facebook}}" ><img src="{{url("images/facebook.png")}}" width="30px" ></a></p>
+                              <a href="{{$d->directions}}"><strong>Get directions</strong></a>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                        
+                          </div>
+                        </div>
+                          @endforeach
+                        
+                        
+            
+                       
+                    </div>
+                </div>
+                       
 			<div class="clearfix"></div>
-		</div>
+                
 </div>
-
-	
-	
-
-
+</div>
 
 <!-- /form -->
 
@@ -218,10 +276,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	});
 </script>
-<!-- start-smooth-scrolling -->
-<!-- for bootstrap working -->
- 
-      <script src="{{ asset('js/bootstrap.js') }}" ></script>
+
+
+<script src="{{ asset('js/bootstrap.js') }}" ></script>
 <!-- //for bootstrap working -->
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">
@@ -241,6 +298,109 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 <!-- //here ends scrolling icon -->
 
-	
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+
+</style>
+
+<script>
+$(document).ready(function(){
+
+$(".filter-button").click(function(){
+    var value = $(this).attr('data-filter');
+    
+    if(value == "all")
+    {
+        //$('.filter').removeClass('hidden');
+        $('.filter').show('1000');
+    }
+    else
+    {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+        $(".filter").not('.'+value).hide('3000');
+        $('.filter').filter('.'+value).show('3000');
+        
+    }
+});
+
+if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+</script>
+
+
+
+
+
+
+
+
+
 </body>
 </html>

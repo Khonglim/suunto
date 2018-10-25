@@ -16,10 +16,10 @@ Route::get('/', function () {
 });
 
 Route::get('/bts', function () {
-    return view('suunto/bts');
+    
 });
 
-
+Route::get('/bts', 'BtsController@BtsShow')->name('BtsShow');
 
 
 
