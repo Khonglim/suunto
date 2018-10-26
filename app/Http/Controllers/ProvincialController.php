@@ -178,8 +178,8 @@ class ProvincialController extends Controller
     public function SamutprakanShow()
     {
         $dealer = DB::table('dealer')
-                ->where('province','=','กรุงเทพมหานครและปริมณฑล')
-                ->where('category', '=', 'ต่างจังหวัด')
+                ->where('province','=','สมุทรปราการ')
+                ->where('category', '=', 'กรุงเทพมหานครและปริมณฑล')
                 ->where('status', '=', 'T')
                 ->get();
                 $data = array(
