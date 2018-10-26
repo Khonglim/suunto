@@ -225,25 +225,99 @@
 		<div class="w3-Events-grids">
 			<div class="col-md-3 w3-Events-bg1  w3-Events-heading">
 			   <h3>01<span>ใกล้ BTS</span></h3>
-			    <p>BTS</p>
+			    <p>search</p>
 				<a href="{{url('/bts')}}"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 			</div>
 			<div class="col-md-3 w3-Events-bg2  w3-Events-heading">
 			   <h3>02<span>ใกล้ MRT</span></h3>
-			    <p>MRT</p>
+			    <p>search</p>
 				<a href="{{url('/mrt')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 			</div>
 			<div class="col-md-3 w3-Events-bg3  w3-Events-heading">
 			   <h3>03<span>ใกล้ ห้าง</span></h3>
-			    <p>SHOPPINGMALL</p>
+			    <p>search</p>
 				<a href="{{url('/shopping_mall')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 			</div> 
+			
 			<div class="col-md-3 w3-Events-bg4  w3-Events-heading">
 			   <h3>04<span>อื่นๆ</span></h3>
-			    <p>OTHER</p>
+			    <p>search</p>
 				<a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 			</div>
-		
+		<br><br><br><br><br>
+			<div class="col-md-3 w3-Events-bg5  w3-Events-heading">
+				<h3>05<span>ชลบุรี</span></h3>
+				 <p>search</p>
+				   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+			   </div>
+
+			   <div class="col-md-3 w3-Events-bg6  w3-Events-heading">
+				<h3>06<span>เชียงราย</span></h3>
+				 <p>search</p>
+				   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+			   </div>
+			   <div class="col-md-3 w3-Events-bg7  w3-Events-heading">
+				<h3>07<span>เชียงใหม่</span></h3>
+				 <p>search</p>
+				   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+			   </div>
+			   <div class="col-md-3 w3-Events-bg8  w3-Events-heading">
+				<h3>08<span>ลำปาง</span></h3>
+				 <p>search</p>
+				   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+			   </div>
+
+			   <div class="col-md-3 w3-Events-bg9  w3-Events-heading">
+				<h3>09<span>นครราชสีมา</span></h3>
+				 <p>search</p>
+				   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+			   </div>
+			   <div class="col-md-3 w3-Events-bg10  w3-Events-heading">
+				<h3>10<span>นนทบุรี</span></h3>
+				 <p>search</p>
+				   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+			   </div>
+			   <div class="col-md-3 w3-Events-bg11  w3-Events-heading">
+				<h3>11<span>ปทุมธานี</span></h3>
+				 <p>search</p>
+				   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+			   </div>
+			   <div class="col-md-3 w3-Events-bg12  w3-Events-heading">
+					<h3>12<span>ประจวบคีรีขันธ์</span></h3>
+					 <p>search</p>
+					   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+				   </div>
+				   <div class="col-md-3 w3-Events-bg13  w3-Events-heading">
+						<h3>13<span>ภูเก็ต</span></h3>
+						 <p>search</p>
+						   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+					   </div>
+
+					   <div class="col-md-3 w3-Events-bg14  w3-Events-heading">
+							<h3>14<span>ระยอง</span></h3>
+							 <p>search</p>
+							   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+						   </div>
+						   <div class="col-md-3 w3-Events-bg15  w3-Events-heading">
+								<h3>15<span>สงขลา</span></h3>
+								 <p>search</p>
+								   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+							   </div>
+							   <div class="col-md-3 w3-Events-bg16  w3-Events-heading">
+									<h3>15<span>สมุทรสาคร</span></h3>
+									 <p>search</p>
+									   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+								   </div>
+								   <div class="col-md-3 w3-Events-bg17  w3-Events-heading">
+										<h3>17<span>สมุทรปราการ</span></h3>
+										 <p>search</p>
+										   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+									   </div>
+
+
+
+
+
 			<div class="clearfix"></div>
 		</div>
 </div>

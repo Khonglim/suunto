@@ -565,7 +565,7 @@ i.agile-sicon {
 /*-- //agile-about --*/
 /*-- /Events --*/
 .w3-Events-bg1{
- background:url(../images/e11.jpg) no-repeat 0px 0px;
+ background:url(../images/e11.jpg) no-repeat 0px 10px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -574,7 +574,7 @@ i.agile-sicon {
 	min-height:400px;
 	}
 	.w3-Events-bg2{
- background:url(../images/e22.jpg) no-repeat 0px 0px;
+ background:url(../images/e22.jpg) no-repeat 0px 10px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -583,7 +583,7 @@ i.agile-sicon {
 	min-height:400px;
 	}
 	.w3-Events-bg3{
- background:url(../images/e33.jpg) no-repeat 0px 0px;
+ background:url(../images/e33.jpg) no-repeat 0px 10px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -592,14 +592,137 @@ i.agile-sicon {
 	min-height:400px;
 	}
 	.w3-Events-bg4{
- background:url(../images/e44.jpg) no-repeat 0px 0px;
+ background:url(../images/e44.jpg) no-repeat 0px 10px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
 	min-height:400px;
-	}
+    }
+    .w3-Events-bg5{
+    background:url(../images/e45.jpg) no-repeat 0px 10px;
+    background-size:cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -ms-background-size:cover;
+    min-height:400px;
+    }
+    .w3-Events-bg6{
+        background:url(../images/e46.jpg) no-repeat 0px 10px;
+        background-size:cover;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        -ms-background-size:cover;
+        min-height:400px;
+        }
+
+        .w3-Events-bg7{
+            background:url(../images/e47.jpg) no-repeat 0px 10px;
+            background-size:cover;
+            -webkit-background-size:cover;
+            -moz-background-size:cover;
+            -o-background-size:cover;
+            -ms-background-size:cover;
+            min-height:400px;
+            }
+
+            .w3-Events-bg8{
+                background:url(../images/e48.jpg) no-repeat 0px 10px;
+                background-size:cover;
+                -webkit-background-size:cover;
+                -moz-background-size:cover;
+                -o-background-size:cover;
+                -ms-background-size:cover;
+                min-height:400px;
+                }
+    
+                .w3-Events-bg9{
+                    background:url(../images/e49.jpg) no-repeat 0px  10px;
+                    background-size:cover;
+                    -webkit-background-size:cover;
+                    -moz-background-size:cover;
+                    -o-background-size:cover;
+                    -ms-background-size:cover;
+                    min-height:400px;
+                    }
+                    .w3-Events-bg10{
+                        background:url(../images/e50.jpg) no-repeat 0px  10px;
+                        background-size:cover;
+                        -webkit-background-size:cover;
+                        -moz-background-size:cover;
+                        -o-background-size:cover;
+                        -ms-background-size:cover;
+                        min-height:400px;
+                        }
+                        .w3-Events-bg11{
+                            background:url(../images/e51.jpg) no-repeat 0px 10px;
+                            background-size:cover;
+                            -webkit-background-size:cover;
+                            -moz-background-size:cover;
+                            -o-background-size:cover;
+                            -ms-background-size:cover;
+                            min-height:400px;
+                            }
+                            .w3-Events-bg12{
+                                background:url(../images/e52.jpg) no-repeat 0px 10px;
+                                background-size:cover;
+                                -webkit-background-size:cover;
+                                -moz-background-size:cover;
+                                -o-background-size:cover;
+                                -ms-background-size:cover;
+                                min-height:400px;
+                                }
+                                .w3-Events-bg13{
+                                    background:url(../images/e53.jpg) no-repeat 0px 10px;
+                                    background-size:cover;
+                                    -webkit-background-size:cover;
+                                    -moz-background-size:cover;
+                                    -o-background-size:cover;
+                                    -ms-background-size:cover;
+                                    min-height:400px;
+                                    }
+
+     .w3-Events-bg14{
+                                    background:url(../images/e54.jpg) no-repeat 0px 10px;
+                                    background-size:cover;
+                                    -webkit-background-size:cover;
+                                    -moz-background-size:cover;
+                                    -o-background-size:cover;
+                                    -ms-background-size:cover;
+                                    min-height:400px;
+                                    }
+
+                                    .w3-Events-bg15{
+                                        background:url(../images/e55.jpg) no-repeat 0px 10px;
+                                        background-size:cover;
+                                        -webkit-background-size:cover;
+                                        -moz-background-size:cover;
+                                        -o-background-size:cover;
+                                        -ms-background-size:cover;
+                                        min-height:400px;
+                                        }
+                                        .w3-Events-bg16{
+                                            background:url(../images/e56.jpg) no-repeat 0px 10px;
+                                            background-size:cover;
+                                            -webkit-background-size:cover;
+                                            -moz-background-size:cover;
+                                            -o-background-size:cover;
+                                            -ms-background-size:cover;
+                                            min-height:400px;
+                                            }
+
+                                            .w3-Events-bg17{
+                                                background:url(../images/e57.jpg) no-repeat 0px 10px;
+                                                background-size:cover;
+                                                -webkit-background-size:cover;
+                                                -moz-background-size:cover;
+                                                -o-background-size:cover;
+                                                -ms-background-size:cover;
+                                                min-height:400px;
+                                                }
 	.w3-Events-heading h3 {
     color: #fff;
     font-size: 2em;
