@@ -21,9 +21,10 @@ class ProvincialController extends Controller
     }
 
     public function ChiangraiShow()
-    {
+    {  
+        $id = 'เชียงราย';
         $dealer = DB::table('dealer')
-                ->where('province','=','เชียงราย')
+                ->where('province','=',$id)
                 ->where('category', '=', 'ต่างจังหวัด')
                 ->where('status', '=', 'T')
                 ->get();
