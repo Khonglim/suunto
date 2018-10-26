@@ -91,7 +91,6 @@ class ProvincialController extends Controller
         return view('suunto/Provincia/nonthaburi',$data);
     }
 
-
     public function PathumthaniShow()
     {
         $dealer = DB::table('dealer')
@@ -105,7 +104,6 @@ class ProvincialController extends Controller
 
         return view('suunto/Provincia/pathumthani',$data);
     }
-
 
     public function PrachuapkhirikhanShow()
     {
@@ -121,7 +119,6 @@ class ProvincialController extends Controller
         return view('suunto/Provincia/prachuapkhirikhan',$data);
     }
 
-
     public function PhuketShow()
     {
         $dealer = DB::table('dealer')
@@ -136,8 +133,60 @@ class ProvincialController extends Controller
         return view('suunto/Provincia/phuket',$data);
     }
 
+    public function RayongShow()
+    {
+        $dealer = DB::table('dealer')
+                ->where('province','=','ระยอง')
+                ->where('category', '=', 'ต่างจังหวัด')
+                ->where('status', '=', 'T')
+                ->get();
+                $data = array(
+                    'dealer' =>   $dealer
+                );
 
+        return view('suunto/Provincia/rayong',$data);
+    }
+    
+    public function SongkhlaShow()
+    {
+        $dealer = DB::table('dealer')
+                ->where('province','=','สงขลา')
+                ->where('category', '=', 'ต่างจังหวัด')
+                ->where('status', '=', 'T')
+                ->get();
+                $data = array(
+                    'dealer' =>   $dealer
+                );
 
+        return view('suunto/Provincia/songkhla',$data);
+    }
 
+    public function SamutsakhonShow()
+    {
+        $dealer = DB::table('dealer')
+                ->where('province','=','สมุทรสาคร')
+                ->where('category', '=', 'ต่างจังหวัด')
+                ->where('status', '=', 'T')
+                ->get();
+                $data = array(
+                    'dealer' =>   $dealer
+                );
+
+        return view('suunto/Provincia/samutsakhon',$data);
+    }
+
+    public function samutprakanShow()
+    {
+        $dealer = DB::table('dealer')
+                ->where('province','=','สมุทรปราการ')
+                ->where('category', '=', 'ต่างจังหวัด')
+                ->where('status', '=', 'T')
+                ->get();
+                $data = array(
+                    'dealer' =>   $dealer
+                );
+
+        return view('suunto/Provincia/samutprakan',$data);
+    }
 
 }
