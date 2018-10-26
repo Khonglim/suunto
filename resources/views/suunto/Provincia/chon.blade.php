@@ -55,7 +55,7 @@
 <!-- /fashion events -->
 <div class="w3-team banner-bottom " id="team">
             <div class="container-fluid">
-                <h3 class="w3ls_head" >จุดจำหน่ายอื่นๆ</h3>
+                <h3 class="w3ls_head" >จุดจำหน่ายจังหวัดชลบุรี</h3>
                 <div class="container">
                     <div class="row">
                           @foreach ($dealer as $d )

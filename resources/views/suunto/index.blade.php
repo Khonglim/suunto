@@ -70,21 +70,8 @@
 						<li>
 							<img src="images/ab5.jpg" alt="" />
 						</li>
-						<li>
-							<img src="images/ab6.jpg" alt="" />
-						</li>
-						<li>
-							<img src="images/ab7.jpg" alt="" />
-						</li>
-						<li>
-							<img src="images/ab8.jpg" alt="" />
-						</li>
-						<li>
-							<img src="images/ab9.jpg" alt="" />
-						</li>
-						<li>
-							<img src="images/ab10.jpg" alt="" />
-						</li>
+						
+					
 					  </ul>
 					</div>
 					<div id="carousel" class="flexslider">
@@ -104,21 +91,7 @@
 						<li>
 							<img src="images/ab5.jpg" alt="" />
 						</li>
-						<li>
-							<img src="images/ab6.jpg" alt="" />
-						</li>
-						<li>
-							<img src="images/ab7.jpg" alt="" />
-						</li>
-						<li>
-							<img src="images/ab8.jpg" alt="" />
-						</li>
-						<li>
-							<img src="images/ab9.jpg" alt="" />
-						</li>
-						<li>
-							<img src="images/ab10.jpg" alt="" />
-						</li>
+					
 					  </ul>
 					</div>
 				  </section>
