@@ -28,6 +28,19 @@ Route::get('/shopping_mall', 'BkkController@ShopShow')->name('shopping_mall');
 Route::get('/otherBKK', 'BkkController@OtherShow')->name('otherShow');
 
 
+Route::get('/chon', 'ProvincialController@ChonShow')->name('chon');
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Auth::routes();

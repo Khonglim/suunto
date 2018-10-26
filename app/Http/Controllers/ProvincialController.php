@@ -175,7 +175,7 @@ class ProvincialController extends Controller
         return view('suunto/Provincia/samutsakhon',$data);
     }
 
-    public function samutprakanShow()
+    public function SamutprakanShow()
     {
         $dealer = DB::table('dealer')
                 ->where('province','=','สมุทรปราการ')

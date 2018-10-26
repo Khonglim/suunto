@@ -167,42 +167,42 @@
 				<div class="about-info-grids">
 				<div class="col-md-4 col-sm-4 ">
 					<br><br>
-					<a href="http://www.11street.co.th/store/MiniMallAction/getMiniMallHome.do?sellerHmpgUrl=suunto"><img src="{{url('images/s1.jpg')}}" class="img-responsive" /></a>
+					<a href="http://www.11street.co.th/store/MiniMallAction/getMiniMallHome.do?sellerHmpgUrl=suunto"><img src="https://res.cloudinary.com/nio/image/upload/v1540527646/logo/s1.jpg" class="img-responsive" /></a>
 				</div>
 
 				<div class="col-md-4 col-sm-4">
 					<br><br>
-					<a href="http://www.bananarun.com/catalogsearch/result/?cat=&q=suunto"> <img src="{{url('images/s2.jpg')}}" class="img-responsive" alt=""/></a>
+					<a href="http://www.bananarun.com/catalogsearch/result/?cat=&q=suunto"> <img src="https://res.cloudinary.com/nio/image/upload/v1540527646/logo/s2.jpg" class="img-responsive" alt=""/></a>
 				</div>
 
 				<div class="col-md-4 col-sm-4">
 					<br><br>
-					<a href="http://www.wemall.com/shop/suunto">	<img src="{{url('images/s3.jpg')}}" class="img-responsive" alt=""/> </a>
+					<a href="http://www.wemall.com/shop/suunto">	<img src="https://res.cloudinary.com/nio/image/upload/v1540527646/logo/s3.jpg" class="img-responsive" alt=""/> </a>
 				</div>
 					
 				<div class="col-md-4 col-sm-4">
 				       <br><br>
-					 <a href="http://tsmactive.com/?route=product/isearch&search=suunto&description=true"> 	<img src="{{url('images/s4.jpg')}}" class="img-responsive" alt=""/></a>
+					 <a href="http://tsmactive.com/?route=product/isearch&search=suunto&description=true"> 	<img src="https://res.cloudinary.com/nio/image/upload/v1540527647/logo/s4.jpg" class="img-responsive" alt=""/></a>
 				</div>
 
 				<div class="col-md-4 col-sm-4">
 					<br><br>
-					<a href="https://www.looksi.com/catalog/suunto/">	<img src="{{url('images/s6.jpg')}}" class="img-responsive" alt=""/> </a>
+					<a href="https://www.looksi.com/catalog/suunto/">	<img src="https://res.cloudinary.com/nio/image/upload/v1540527647/logo/s6.jpg" class="img-responsive" alt=""/> </a>
 				</div>
 
 				<div class="col-md-4 col-sm-4">
 					<br><br>
-					<a href="http://www.avarinshop.com/?s=suunto&product_cat=0&post_type=product">		<img src="{{url('images/s7.jpg')}}" class="img-responsive" alt=""/></a>
+					<a href="http://www.avarinshop.com/?s=suunto&product_cat=0&post_type=product">		<img src="https://res.cloudinary.com/nio/image/upload/v1540527647/logo/s7.jpg" class="img-responsive" alt=""/></a>
 				</div>
 
 				<div class="col-md-4 col-sm-4">
 					<br><br>
-					<a href="http://www.lazada.co.th/catalog/?q=suunto">	<img src="{{url('images/s8.jpg')}}" class="img-responsive" alt=""/> </a>
+					<a href="http://www.lazada.co.th/catalog/?q=suunto">	<img src="https://res.cloudinary.com/nio/image/upload/v1540527647/logo/s8.jpg" class="img-responsive" alt=""/> </a>
 				</div>
 
 				<div class="col-md-4 col-sm-4">
 					<br><br>
-					<a href="https://www.thepuffinhouse.com/landing">	<img src="{{url('images/s9.jpg')}}" class="img-responsive" alt=""/> </a>
+					<a href="https://www.thepuffinhouse.com/landing">	<img src="https://res.cloudinary.com/nio/image/upload/v1540527647/logo/s4.jpg" class="img-responsive" alt=""/> </a>
 				</div>
 
 				<div class="col-md-4 col-sm-4">
@@ -248,7 +248,7 @@
 			<div class="col-md-3 w3-Events-bg5  w3-Events-heading">
 				<h3>05<span>ชลบุรี</span></h3>
 				 <p>search</p>
-				   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+				   <a href="{{url('/chon')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 			   </div>
 
 			   <div class="col-md-3 w3-Events-bg6  w3-Events-heading">
