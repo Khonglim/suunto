@@ -81,7 +81,7 @@ class ProvincialController extends Controller
     {
         $dealer = DB::table('dealer')
                 ->where('province','=','นนทบุรี')
-                ->where('category', '=', 'ต่างจังหวัด')
+                ->where('category', '=', 'กรุงเทพมหานครและปริมณฑล')
                 ->where('status', '=', 'T')
                 ->get();
                 $data = array(
@@ -95,7 +95,7 @@ class ProvincialController extends Controller
     {
         $dealer = DB::table('dealer')
                 ->where('province','=','ปทุมธานี')
-                ->where('category', '=', 'ต่างจังหวัด')
+                ->where('category', '=', 'กรุงเทพมหานครและปริมณฑล')
                 ->where('status', '=', 'T')
                 ->get();
                 $data = array(
@@ -178,7 +178,7 @@ class ProvincialController extends Controller
     public function SamutprakanShow()
     {
         $dealer = DB::table('dealer')
-                ->where('province','=','สมุทรปราการ')
+                ->where('province','=','กรุงเทพมหานครและปริมณฑล')
                 ->where('category', '=', 'ต่างจังหวัด')
                 ->where('status', '=', 'T')
                 ->get();
