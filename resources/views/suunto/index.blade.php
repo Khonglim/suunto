@@ -254,64 +254,64 @@
 			   <div class="col-md-3 w3-Events-bg6  w3-Events-heading">
 				<h3>06<span>เชียงราย</span></h3>
 				 <p>search</p>
-				   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+				   <a href="{{url('/chiangrai')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 			   </div>
 			   <div class="col-md-3 w3-Events-bg7  w3-Events-heading">
 				<h3>07<span>เชียงใหม่</span></h3>
 				 <p>search</p>
-				   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+				   <a href="{{url('/chiangmai')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 			   </div>
 			   <div class="col-md-3 w3-Events-bg8  w3-Events-heading">
 				<h3>08<span>ลำปาง</span></h3>
 				 <p>search</p>
-				   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+				   <a href="{{url('/lampang')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 			   </div>
 
 			   <div class="col-md-3 w3-Events-bg9  w3-Events-heading">
 				<h3>09<span>นครราชสีมา</span></h3>
 				 <p>search</p>
-				   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+				   <a href="{{url('/nakhonratchasima')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 			   </div>
 			   <div class="col-md-3 w3-Events-bg10  w3-Events-heading">
 				<h3>10<span>นนทบุรี</span></h3>
 				 <p>search</p>
-				   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+				   <a href="{{url('/nonthaburi')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 			   </div>
 			   <div class="col-md-3 w3-Events-bg11  w3-Events-heading">
 				<h3>11<span>ปทุมธานี</span></h3>
 				 <p>search</p>
-				   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+				   <a href="{{url('/pathumthani')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 			   </div>
 			   <div class="col-md-3 w3-Events-bg12  w3-Events-heading">
 					<h3>12<span>ประจวบคีรีขันธ์</span></h3>
 					 <p>search</p>
-					   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+					   <a href="{{url('/prachuapkhirikhan')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 				   </div>
 				   <div class="col-md-3 w3-Events-bg13  w3-Events-heading">
 						<h3>13<span>ภูเก็ต</span></h3>
 						 <p>search</p>
-						   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+						   <a href="{{url('/phuket')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 					   </div>
 
 					   <div class="col-md-3 w3-Events-bg14  w3-Events-heading">
 							<h3>14<span>ระยอง</span></h3>
 							 <p>search</p>
-							   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+							   <a href="{{url('/rayong')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 						   </div>
 						   <div class="col-md-3 w3-Events-bg15  w3-Events-heading">
 								<h3>15<span>สงขลา</span></h3>
 								 <p>search</p>
-								   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+								   <a href="{{url('/songkhla')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 							   </div>
 							   <div class="col-md-3 w3-Events-bg16  w3-Events-heading">
 									<h3>15<span>สมุทรสาคร</span></h3>
 									 <p>search</p>
-									   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+									   <a href="{{url('/samutsakhon')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 								   </div>
 								   <div class="col-md-3 w3-Events-bg17  w3-Events-heading">
 										<h3>17<span>สมุทรปราการ</span></h3>
 										 <p>search</p>
-										   <a href="{{url('/otherBKK')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+										   <a href="{{url('/samutprakan')}}" ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 									   </div>
 
 
