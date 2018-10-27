@@ -1,6 +1,6 @@
+
 @extends('layouts.suunto')
 @section('content')
-
 <!-- Header
 		============================================= -->
 <header id="header" class="sticky-style-2">
@@ -8,7 +8,7 @@
     
     <!-- Logo
 				============================================= -->
-    <div id="logo" class="divcenter"> <a href="{{url("/")}}" class="standard-logo"><img class="divcenter" src="images/store/logo-agency.png" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"></a> <a href="" class="retina-logo"><img class="divcenter" src="images/store/logo-agency@2x.png" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"></a> </div>
+    <div id="logo" class="divcenter"> <a href="{{url('/')}}" class="standard-logo"><img class="divcenter" src="images/store/logo-agency.png" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"></a> <a href="" class="retina-logo"><img class="divcenter" src="images/store/logo-agency@2x.png" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"></a> </div>
     <!-- #logo end --> 
     
   </div>
@@ -21,10 +21,11 @@
   <div class="content-wrap">
     <div class="clearfix">
       <div class="row clearfix">
-        <div class="col-md-12 center"> <img class="image_fade" src="images/store/location/0.jpg" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </div>
-        <div class="col-md-12 center"> <a href="bangkok/"> <img class="image_fade" src="images/store/location/1.jpg" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
-        <div class="col-md-12 center"> <a href="{{url("/ProvinceShow")}}"> <img class="image_fade" src="images/store/location/2.jpg" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
-        <div class="col-md-12 center"> <a href="online/"> <img class="image_fade" src="images/store/location/3.jpg" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
+        <div class="col-md-12 center"> <img class="image_fade" src="images/store/provincial/0.jpg" content="Suunto Store | ค้นหาตัวจังหวัดอื่น"> </div>
+            @foreach ($province as $item)
+      <div class="col-md-12 center"> <a href="{{url('SearchProvince/'. $item->province)}}"> <img class="image_fade" src="{{$item->imge}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div> 
+            @endforeach
+        
       </div>
     </div>
   </div>
@@ -55,7 +56,9 @@
               <td width="10%"><a href="http://www.suuntoth.com/store/"> <img class="image_fade" src="images/store.png" content="Suunto Store | ค้นหาตัวแทนจำหน่าย">
                 <div align="center"><font color="#FFFFFF" style="font-size:16px;"><strong> STORE </strong></font></div>
                 </a></td>
-              <td width="30%"></td>
+              <td width="30%">
+                 
+              </td>
             </tr>
           </table>
         </div>
@@ -63,5 +66,5 @@
     </div>
   </div>
 </section>
-
+<!-- #content end --> 
 @endsection
