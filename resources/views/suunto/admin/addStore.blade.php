@@ -58,7 +58,20 @@
                                                                  
                                                                
                                                                 </div>
-
+                                                                <div class="form-row">
+                                                                        <div class="col-md-12 mb-3">
+                                                                          <label for="validationTooltip01"> BTS search <strong class="text-danger"> (ระบุชื่อเดียวกับ Near BTS)</strong> </label>
+                                                                          <select name="bts_search" id="bts_search" class="js-example-basic-single form-control" >
+                                                                        <option value="">เลือก</option>
+                                                                        @foreach ($bts_search as $item)
+                                                                          <option value="{{$item->bts_search}}">{{$item->bts_search}}</option>
+                                                                            @endforeach
+            
+                                                                      </select>
+                                                                        </div>
+                                                                       
+                                                                     
+                                                                      </div>
                                                                 <div class="form-row">
                                                                         <div class="col-md-12 mb-3">
                                                                           <label for="validationTooltip01">Near MRT</label>
@@ -72,6 +85,19 @@
                                                                           </select>
                                                                         </div>
                                                                   </div>
+                                                                  <div class="form-row">
+                                                                        <div class="col-md-12 mb-3">
+                                                                          <label for="validationTooltip01"> MRT search <strong class="text-danger">(ระบุชื่อเดียวกับ Near MRT)</strong> </label>
+                                                                          <select name="mrt_search" id="mrt_search" class="js-example-basic-single form-control" >
+                                                                                    <option value="">เลือก</option>
+                                                                              @foreach ($mrt_search as $item)
+                                                                          <option value="{{$item->mrt_search}}">{{$item->mrt_search}}</option>
+                                                                            @endforeach
+                                                                          </select>
+                                                                        </div>
+                                                                       
+                                                                     
+                                                                      </div>
                                                                   <div class="form-row">
                                                                               <div class="col-md-12 mb-3">
                                                                                     <label for="validationTooltip01">Near Shopping Mall</label>

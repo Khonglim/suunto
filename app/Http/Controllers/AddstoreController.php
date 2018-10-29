@@ -8,6 +8,8 @@ use App\Mrt;
 use App\Bts;
 use Illuminate\Support\Facades\Input;
 use App\Deale;
+use App\Bts_search;
+use App\Mrt_search;
 use DB;
 class AddstoreController extends Controller
 {
@@ -35,12 +37,16 @@ class AddstoreController extends Controller
     public function create()
     {
         $province = Province::all();
+        $bts_search = Bts_search::all();
+        $mrt_search = Mrt_search::all();
         $bts = Bts::all();
         $mrt = Mrt::all();
         $data = array(
          'province' =>  $province,
          'mrt' =>  $mrt,
-         'bts' =>  $bts
+         'bts' =>  $bts,
+         'bts_search' => $bts_search,
+         'mrt_search' => $mrt_search
      );
         return view("suunto.admin.addStore",$data);
     }
@@ -68,6 +74,7 @@ class AddstoreController extends Controller
         $deale->store_hours = $request->store_hours;
         $deale->facebook = $request->facebook;
         $deale->contact_number = $request->contact_number;
+        $deale->map = $request->map;
         $deale->map = $request->map;
         $deale->directions = $request->category;
         if(Input::hasFile('image')){
