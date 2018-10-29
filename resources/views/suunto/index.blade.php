@@ -22,7 +22,7 @@
     <div class="clearfix">
       <div class="row clearfix">
         <div class="col-md-12 center"> <img class="image_fade" src="images/store/location/0.jpg" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </div>
-        <div class="col-md-12 center"> <a href="bangkok/"> <img class="image_fade" src="images/store/location/1.jpg" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
+        <div class="col-md-12 center"> <a href="{{url("/BkkShow")}}"> <img class="image_fade" src="images/store/location/1.jpg" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
         <div class="col-md-12 center"> <a href="{{url("/ProvinceShow")}}"> <img class="image_fade" src="images/store/location/2.jpg" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
         <div class="col-md-12 center"> <a href="online/"> <img class="image_fade" src="images/store/location/3.jpg" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
       </div>

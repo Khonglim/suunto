@@ -29,7 +29,7 @@
 <link rel="stylesheet" href="{{ asset('css/css_old/responsive.css') }}" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="{{ asset('css/css_old/colors.php') }}" type="text/css" />
-<link rel="stylesheet" href="{{ asset('css/css_old/pricing-table.css') }}" type="text/css" />
+
 <link rel="stylesheet" href="{{ asset('css/css_old/pricing-table-filter.css') }}" type="text/css" />
 <!-- Document Title
 	============================================= -->

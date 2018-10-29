@@ -19,4 +19,6 @@ class SearchController extends Controller
 
         return view('suunto/Provincia/searchShow',$data);
     }
+
+   
 }

@@ -12,5 +12,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
          $this->call(ProvinceTableSeeder::class);
+         $this->call(MrtTableSeeder::class);
+         $this->call(BtsTableSeeder::class);
+         $this->call(UserTableSeeder::class);
     }
 }

@@ -11,11 +11,15 @@
 |
 */
 Route::resource('admin','AddLocalController');
+Route::resource('addstore','AddstoreController');
 Route::get('/', function () {
     return view('suunto.index');
 });
 
-Route::get('/ProvinceShow', 'ShowController@index');
+Route::get('/ProvinceShow', 'ShowController@province');
+Route::get('/BkkShow', 'ShowController@bkk');
+Route::get('/BtsShow', 'BkkController@BtsShow');
+
 
 Route::get('/SearchProvince/{province}', 'SearchController@index');
 

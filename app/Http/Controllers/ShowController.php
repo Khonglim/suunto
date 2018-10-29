@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\AddLocal;
 class ShowController extends Controller
 {
-    public function index()
+    public function province()
     {
 
         $province = AddLocal::all();
@@ -20,4 +20,15 @@ class ShowController extends Controller
            
         return view("suunto.Provincia.showProvince",$data);
     }
+
+    public function bkk()
+    {
+        
+       
+
+        return view('suunto/BKK/searchShow');
+    }
+
+
+
 }
