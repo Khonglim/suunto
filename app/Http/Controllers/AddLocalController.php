@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Province;
 use App\AddLocal;
 use App\Deale;
+use DB;
 use Illuminate\Support\Facades\Input;
 class AddLocalController extends Controller
 {
@@ -106,6 +107,7 @@ class AddLocalController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $operate =   DB::table('add_local')->where('id_local', '=',  $id)->delete();
+        return redirect('admin');
     }
 }

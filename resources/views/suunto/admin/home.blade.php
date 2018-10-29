@@ -39,7 +39,7 @@
                       
                       <!-- Modal body -->
                       <div class="modal-body">
-                      <form action="addstor/destroy/{{$dealers->id}}"  method="DET">
+                      <form action="addstor/destroy/{{$dealers->id}}"  method="DELETE">
                       
                       
                       
@@ -103,10 +103,10 @@
             <td class="text-nowrap">{{$item->status}}  </td>
             <td class="text-nowrap"  align="center">
                   
-                    <a href="" class="btn btn-warning btn-sm "><i data-feather="edit" width="15px"></i></a>
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal{{$item->id}}"><i data-feather="trash-2" width="15px"></i></button>
+                   
+                    <a  href="#"  data-toggle="modal" data-target="#myModal{{$item->id_local}}"><i data-feather="trash-2" width="15px"></i></a>
                   <!-- The Modal -->
-  <div class="modal" id="myModal{{$item->id}}">
+  <div class="modal" id="myModal{{$item->id_local}}">
         <div class="modal-dialog">
           <div class="modal-content">
           
@@ -118,14 +118,19 @@
             
             <!-- Modal body -->
             <div class="modal-body">
-            คุณต้องการลบจังหวัด <strong>{{$item->province}}</strong> ใช่หรือไม่
-            </div>
-            
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button type="summit" class="from-control" data-dismiss="modal">ตกลง</button>
-              <button type="button" class="from-control" data-dismiss="modal">ยกเลิก</button>
-            </div>
+                <form action="admin/destroy/{{$item->id_local}}"  method="DELETE">
+                      
+                      
+                      
+                      
+                        
+                  <p>คุณต้องการลบร้าน {{$item->store_name }}ใช่หรือไม่!!!!</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="summit" class="btn btn-danger">ลบ</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">ยกเลิก</button>
+                  </div>
+                </form>
             
           </div>
         </div>
