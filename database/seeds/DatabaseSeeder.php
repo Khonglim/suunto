@@ -19,7 +19,9 @@ class DatabaseSeeder extends Seeder
          $this->call(DealerrTableSeeder::class);
          $this->call(Mrt_searchTableSeeder::class);
          $this->call(Bts_searchTableSeeder::class);
-
+         $this->call(ShoppingTableSeeder::class);
+         $this->call(ShoppingToTableSeeder::class);
          
+        
     }
 }

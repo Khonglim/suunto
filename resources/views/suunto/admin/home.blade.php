@@ -39,8 +39,8 @@
                       
                       <!-- Modal body -->
                       <div class="modal-body">
-                      <form action="addstor/destroy/{{$dealers->id}}"  method="DELETE">
-                      
+                        {{ Form::open(['route' => ['addstore.destroy',$dealers->id, 'method' => "DELETE"] ]) }}
+                        <input type="hidden" name="_method" value="delete" />
                       
                       
                       
@@ -50,6 +50,7 @@
                       <div class="modal-footer">
                         <button type="summit" class="btn btn-danger">ลบ</button>
                         <button type="button" class="btn btn-default" data-dismiss="modal">ยกเลิก</button>
+                        {{ Form::close() }}
                       </div>
                     </form>
                       </div>
@@ -91,7 +92,7 @@
           <tr>
               <th>จังหวัด</th>
               <th>สถานะ</th>
-              <th>แก้ไข/ลบ</th>
+              <th>ลบ</th>
             
           </tr>
       </thead>
@@ -118,19 +119,20 @@
             
             <!-- Modal body -->
             <div class="modal-body">
-                <form action="admin/destroy/{{$item->id_local}}"  method="DELETE">
+              {{ Form::open(['route' => ['admin.destroy',$item->id_local, 'method' => "DELETE"] ]) }}
+              <input type="hidden" name="_method" value="delete" />
                       
                       
                       
                       
                         
-                  <p>คุณต้องการลบร้าน {{$item->store_name }}ใช่หรือไม่!!!!</p>
+                  <p>คุณต้องการลบหน้าเว็บ {{$item->store_name }}ใช่หรือไม่!!!!</p>
                   </div>
                   <div class="modal-footer">
                     <button type="summit" class="btn btn-danger">ลบ</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">ยกเลิก</button>
                   </div>
-                </form>
+                  {{ Form::close() }}
             
           </div>
         </div>
@@ -149,7 +151,7 @@
           <tr>
                   <th>จังหวัด</th>
                   <th>สถานะ</th>
-                  <th>แก้ไข/ลบ</th>
+                  <th>ลบ</th>
           </tr>
       </tfoot>
   </table>

@@ -10,7 +10,10 @@ use Illuminate\Support\Facades\Input;
 use App\Deale;
 use App\Bts_search;
 use App\Mrt_search;
+use App\ShoppingMall;//ตัวค้นหา ฟิวเตอร์
+use App\ShoppingMallTO; //ชื่อห้างร้าน
 use DB;
+
 class AddstoreController extends Controller
 {
 
@@ -39,6 +42,8 @@ class AddstoreController extends Controller
         $province = Province::all();
         $bts_search = Bts_search::all();
         $mrt_search = Mrt_search::all();
+        $shoppingMall =  ShoppingMall::all();
+        $shoppingMallto =  ShoppingMallTO::all();
         $bts = Bts::all();
         $mrt = Mrt::all();
         $data = array(
@@ -46,7 +51,10 @@ class AddstoreController extends Controller
          'mrt' =>  $mrt,
          'bts' =>  $bts,
          'bts_search' => $bts_search,
-         'mrt_search' => $mrt_search
+         'mrt_search' => $mrt_search,
+         'shoppingMall'        =>  $shoppingMall,
+         'shoppingMallto'        =>  $shoppingMallto,
+
      );
         return view("suunto.admin.addStore",$data);
     }
@@ -60,6 +68,7 @@ class AddstoreController extends Controller
     public function store(Request $request)
     {
         $deale = new Deale;
+        $deale->store_name = $request->store_name;
         $deale->category = $request->category;
         $deale->province = $request->province;
         $deale->bts = $request->bts;
@@ -75,8 +84,8 @@ class AddstoreController extends Controller
         $deale->facebook = $request->facebook;
         $deale->contact_number = $request->contact_number;
         $deale->map = $request->map;
-        $deale->map = $request->map;
-        $deale->directions = $request->category;
+        $deale->directions = $request->directions;
+       
         if(Input::hasFile('image')){
             $file=Input::file('image');
             $deale->picture_1 = $file->getClientOriginalName();
@@ -84,7 +93,7 @@ class AddstoreController extends Controller
         }
         $deale->save();
 
-return "save";
+return redirect("admin");
 
 
 
@@ -120,11 +129,19 @@ return "save";
             $province = Province::all();
             $bts = Bts::all();
             $mrt = Mrt::all();
+            $bts_search = Bts_search::all();
+            $mrt_search = Mrt_search::all();
+            $shoppingMall =  ShoppingMall::all();
+            $shoppingMallto =  ShoppingMallTO::all();
             $data = array(
                 'deale' => $deale,
                 'province' =>  $province,
                 'mrt' =>  $mrt,
-                'bts' =>  $bts
+                'bts' =>  $bts,
+                'bts_search' => $bts_search,
+                'mrt_search' => $mrt_search,
+                'shoppingMall'        =>  $shoppingMall,
+                'shoppingMallto'        =>  $shoppingMallto,
             );
             return view('suunto/admin/editStore',$data);
         }
@@ -139,7 +156,33 @@ return "save";
      */
     public function update(Request $request, $id)
     {
-        //
+        $deale = Deale::find($id); 
+        $deale->store_name = $request->store_name;
+        $deale->category = $request->category;
+        $deale->province = $request->province;
+        $deale->bts = $request->bts;
+        $deale->mrt = $request->mrt;
+        $deale->mrt_search = $request->mrt_search;
+        $deale->bts_search = $request->bts_search;
+        $deale->shopping_mall = $request->shopping_mall;
+        $deale->shopping_mall_search  = $request->shopping_mall_search;
+        $deale->road = $request->road;
+        $deale->store_name = $request->store_name;
+        $deale->address = $request->address;
+        $deale->store_hours = $request->store_hours;
+        $deale->facebook = $request->facebook;
+        $deale->contact_number = $request->contact_number;
+        $deale->map = $request->map;
+        $deale->directions = $request->directions;
+       
+        if(Input::hasFile('image')){
+            $file=Input::file('image');
+            $deale->picture_1 = $file->getClientOriginalName();
+            $file->move(public_path(). '/', $file->getClientOriginalName());
+        }
+        $deale->save();
+
+return redirect("admin");
     }
 
     /**

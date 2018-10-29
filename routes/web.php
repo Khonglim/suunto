@@ -12,8 +12,8 @@
 */
 Route::resource('admin','AddLocalController');
 Route::resource('addstore','AddstoreController');
-Route::get('addstor/destroy/{id}','AddstoreController@destroy');
-Route::get('admin/destroy/{id}','AddLocalController@destroy');
+
+
 Route::get('/', function () {
     return view('suunto.index');
 });
@@ -30,6 +30,9 @@ Route::get('/SearchProvince/{province}', 'SearchController@index');
 
 Auth::routes();
 
+Route::get('/online', function () {
+    return view('suunto.shoponline.online');
+});
 
 
 
