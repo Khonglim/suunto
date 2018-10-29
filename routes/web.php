@@ -12,6 +12,8 @@
 */
 Route::resource('admin','AddLocalController');
 Route::resource('addstore','AddstoreController');
+Route::get('addstor/destroy/{id}','AddstoreController@destroy');
+
 Route::get('/', function () {
     return view('suunto.index');
 });

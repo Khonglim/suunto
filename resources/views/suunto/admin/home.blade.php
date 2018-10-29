@@ -24,7 +24,7 @@
                     <td class="text-nowrap"  align="center">
                         
                          
-                            <a href="" ><i data-feather="edit" width="15px"></i></a>
+                            <a href="{{'addstore/'.$dealers->id.'/edit'}}" ><i data-feather="edit" width="15px"></i></a>
                             <a href="" data-toggle="modal" data-target="#myModal{{$dealers->id}}"><i data-feather="trash-2" width="15px"></i></a>
                             <!-- The Modal -->
             <div class="modal" id="myModal{{$dealers->id}}">
@@ -39,14 +39,23 @@
                       
                       <!-- Modal body -->
                       <div class="modal-body">
-                      คุณต้องการลบร้าน <strong>{{$dealers->store_name}}</strong> ใช่หรือไม่
+                      <form action="addstor/destroy/{{$dealers->id}}"  method="DET">
+                      
+                      
+                      
+                      
+                        
+                      <p>คุณต้องการลบร้าน {{$dealers->store_name }}ใช่หรือไม่!!!!</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="summit" class="btn btn-danger">ลบ</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">ยกเลิก</button>
+                      </div>
+                    </form>
                       </div>
                       
                       <!-- Modal footer -->
-                      <div class="modal-footer">
-                        <button type="summit" class="btn btn-info" data-dismiss="modal">ตกลง</button>
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">ยกเลิก</button>
-                      </div>
+                      
                       
                     </div>
                   </div>

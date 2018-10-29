@@ -8,6 +8,7 @@ use App\Mrt;
 use App\Bts;
 use Illuminate\Support\Facades\Input;
 use App\Deale;
+use DB;
 class AddstoreController extends Controller
 {
 
@@ -106,7 +107,20 @@ return "save";
      */
     public function edit($id)
     {
-        //
+
+        if($id !== '') {
+            $deale = Deale::find($id); 
+            $province = Province::all();
+            $bts = Bts::all();
+            $mrt = Mrt::all();
+            $data = array(
+                'deale' => $deale,
+                'province' =>  $province,
+                'mrt' =>  $mrt,
+                'bts' =>  $bts
+            );
+            return view('suunto/admin/editStore',$data);
+        }
     }
 
     /**
@@ -129,6 +143,7 @@ return "save";
      */
     public function destroy($id)
     {
-        //
+        $operate =   DB::table('dealer')->where('id', '=',  $id)->delete();
+        return redirect('admin');
     }
 }

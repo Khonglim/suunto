@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class DealerTableSeeder extends Seeder
+class DealerrTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -1904,4 +1904,5 @@ class DealerTableSeeder extends Seeder
             
         ]);
     }
-}
+    }
+

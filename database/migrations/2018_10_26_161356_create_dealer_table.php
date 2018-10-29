@@ -14,24 +14,24 @@ class CreateDealerTable extends Migration
     public function up()
     {
         Schema::create('dealer', function (Blueprint $table) {
-            $table->increments('id_dealer');
-            $table->char('category');
-            $table->char('province');
-            $table->char('bts')->default('no');
-            $table->char('bts_search')->default('no');
-            $table->char('mrt')->default('no');
-            $table->char('mrt_search')->default('no');
-            $table->char('shopping_mall');
-            $table->char('shopping_mall_search')->default('no');
-            $table->char('road')->default('no');
-            $table->char('store_name');
-            $table->text('address');
-            $table->char('store_hours');
-            $table->char('facebook');
-            $table->char('contact_number');
-            $table->text('map');
-            $table->text('directions');
-            $table->char('picture_1');
+            $table->increments('id');
+            $table->char('category')->nullable();
+            $table->char('province')->nullable();
+            $table->char('bts')->nullable();
+            $table->char('bts_search')->nullable();
+            $table->char('mrt')->nullable();
+            $table->char('mrt_search')->nullable();
+            $table->char('shopping_mall')->nullable();
+            $table->char('shopping_mall_search')->nullable();
+            $table->char('road')->nullable();
+            $table->char('store_name')->nullable();
+            $table->text('address')->nullable();
+            $table->char('store_hours')->nullable();
+            $table->char('facebook')->nullable();
+            $table->char('contact_number')->nullable();
+            $table->text('map')->nullable();
+            $table->text('directions')->nullable();
+            $table->char('picture_1')->nullable();
             $table->char('status')->default('T');
             $table->timestamps();
         });
