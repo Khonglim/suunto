@@ -96,8 +96,8 @@
 		
 		<!-- External JavaScripts
 			============================================= --> 
-		<script type="text/javascript" src="{{asset('js/js_old/jquery.js' )}}" defer></script> 
-		<script type="text/javascript" src="{{asset('js/js_old/plugins.js' )}}" defer></script> 
+			<script type="text/javascript" src="{{asset('js/js_old/jquery.js' )}}" defer></script> 
+			<script type="text/javascript" src="{{asset('js/js_old/plugins.js' )}}" defer></script> 
 		
 		<!-- Footer Scripts
 			============================================= --> 

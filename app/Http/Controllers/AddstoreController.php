@@ -22,7 +22,8 @@ class AddstoreController extends Controller
      */
     public function index()
     {
-       
+        
+        
     }
 
     /**

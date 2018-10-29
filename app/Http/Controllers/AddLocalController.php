@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Province;
 use App\AddLocal;
+use App\Deale;
 use Illuminate\Support\Facades\Input;
 class AddLocalController extends Controller
 {
@@ -20,9 +21,11 @@ class AddLocalController extends Controller
      */
     public function index()
     {
+        $dealer = Deale::all();
         $addLocal = AddLocal::all();
         $data = array(
-            'addLocal' =>  $addLocal
+            'addLocal' =>  $addLocal,
+            'dealer' =>  $dealer
         );
         return view('suunto.admin.home',$data);
     }

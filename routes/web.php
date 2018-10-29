@@ -18,6 +18,7 @@ Route::get('/', function () {
 
 Route::get('/ProvinceShow', 'ShowController@province');
 Route::get('/BkkShow', 'ShowController@bkk');
+
 Route::get('/BtsShow', 'BkkController@BtsShow');
 
 

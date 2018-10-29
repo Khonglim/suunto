@@ -16,17 +16,20 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach ( $dealer as  $dealers)
                 <tr>
-                   
+                    <td class="text-nowrap">{{$dealers->province}}</td>
+                    <td class="text-nowrap">{{$dealers->store_name}}t</td>
+                    <td class="text-nowrap">{{$dealers->directions}}</td>
+                    <td class="text-nowrap">
                         
-                   
-                    <td class="text-nowrap">Tiger Nixon</td>
-                    <td class="text-nowrap">System Architect</td>
-                    <td class="text-nowrap">Edinburgh</td>
-                    <td class="text-nowrap">61</td>
+                            <a href="" class="btn btn-primary btn-sm"><i data-feather="eye" width="15px"></i></a>
+                            <a href="" class="btn btn-warning btn-sm "><i data-feather="edit" width="15px"></i></a>
+                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal{{$item->id}}"><i data-feather="trash-2" width="15px"></i></button>
+                    </td>
                    
                 </tr>
-              
+                @endforeach
           
             </tbody>
             <tfoot>
