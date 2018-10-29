@@ -21,21 +21,12 @@
             <div class="content-wrap">
               <div class="clearfix">
                 <div class="row clearfix">
-                  <div class="col-md-12 center"> <img class="image_fade" src="{{url('images/store/bangkok/bts.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </div>
+                  <div class="col-md-12 center"> <img class="image_fade" src="{{url('images/store/bangkok/another.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </div>
                 </div>
               </div>
             </div>
           </section>
-          <div align="center">
-              <button class="btn btn-default filter-button" data-filter="all">Show  All</button>
-              <button class="btn btn-default filter-button" data-filter="pf-asoke">BTS Asoke Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-chidlom">BTS Chidlom Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-phrom">BTS Phrom Phong Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-phoenimit">BTS Phoenimit Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-siam">BTS Siam Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-saladaeng">BTS Saladaeng Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-victory">BTS Victory Monument Station</button>
-          </div>
+       
           <section id="content">
                   <div class="content-wrap">
                     <div class="container clearfix">
@@ -43,12 +34,14 @@
                         
                       @foreach ($dealer as $item)
                       
-                      <div class="gallery_product  col-md-4 filter  {{$item->bts_search}}">
+                    
                         <div class="pricing--item" >
                           <h3 class="pricing--title">
                                     {{$item->store_name}}
                           </h3>
-                          <br>
+                          <div class="pricing--price">
+                              {{$item->road}}
+                            </div>
                         <div align="center"><a href="tel: {{$item->contact_number}}"> <i class="icon-phone3" style="width:20px;"></i> <font color="#FFFFFF">
                                     {{$item->contact_number}}
                                     </font></a> </div>
@@ -123,7 +116,7 @@
                                     </div>
                                   </div>
                                 </div>
-                              </div>
+                            
                         @endforeach
                       </div>
                     </div>

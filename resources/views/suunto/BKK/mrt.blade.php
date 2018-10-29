@@ -21,20 +21,16 @@
             <div class="content-wrap">
               <div class="clearfix">
                 <div class="row clearfix">
-                  <div class="col-md-12 center"> <img class="image_fade" src="{{url('images/store/bangkok/bts.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </div>
+                  <div class="col-md-12 center"> <img class="image_fade" src="{{url('images/store/bangkok/mrt.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </div>
                 </div>
               </div>
             </div>
           </section>
           <div align="center">
               <button class="btn btn-default filter-button" data-filter="all">Show  All</button>
-              <button class="btn btn-default filter-button" data-filter="pf-asoke">BTS Asoke Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-chidlom">BTS Chidlom Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-phrom">BTS Phrom Phong Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-phoenimit">BTS Phoenimit Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-siam">BTS Siam Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-saladaeng">BTS Saladaeng Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-victory">BTS Victory Monument Station</button>
+              <button class="btn btn-default filter-button" data-filter="pf-phaholyothin">MRT Phaholyothin Station</button>
+              <button class="btn btn-default filter-button" data-filter="pf-sukhumvit">MRT Sukhumvit Station</button>
+              <button class="btn btn-default filter-button" data-filter="pf-silom">MRT Silom Station</button>
           </div>
           <section id="content">
                   <div class="content-wrap">
@@ -43,7 +39,7 @@
                         
                       @foreach ($dealer as $item)
                       
-                      <div class="gallery_product  col-md-4 filter  {{$item->bts_search}}">
+                      <div class="gallery_product  col-md-4 filter  {{$item->mrt_search}}">
                         <div class="pricing--item" >
                           <h3 class="pricing--title">
                                     {{$item->store_name}}

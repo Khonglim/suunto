@@ -22,9 +22,9 @@
                 <div class="row clearfix">
                   <div class="col-md-12 center"> <img class="image_fade" src="{{url('images/store/bangkok/0.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </div>
                 <div class="center"> <a href="{{url('/BtsShow')}}"> <img class="image_fade" src="{{url('images/store/bangkok/1.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
-                  <div class="center"> <a href="mrt/"> <img class="image_fade" src="{{url('images/store/bangkok/2.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
-                  <div class="center"> <a href="shoppingmall/"> <img class="image_fade" src="{{url('images/store/bangkok/3.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
-                  <div class="center"> <a href="another/"> <img class="image_fade" src="{{url('images/store/bangkok/4.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
+                  <div class="center"> <a href="{{url('/MrtShow')}}"> <img class="image_fade" src="{{url('images/store/bangkok/2.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
+                  <div class="center"> <a href="{{url('/ShopShow')}}"> <img class="image_fade" src="{{url('images/store/bangkok/3.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
+                  <div class="center"> <a href="{{url('/OtherShow')}}"> <img class="image_fade" src="{{url('images/store/bangkok/4.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
                 </div>
               </div>
             </div>

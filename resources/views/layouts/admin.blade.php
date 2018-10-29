@@ -20,7 +20,7 @@
           }
           .table-wrapper-scroll-y {
   display: block;
-  max-height: 400px;
+  max-height: 1000px;
   overflow-y: auto;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
@@ -43,7 +43,7 @@
               <a class="nav-link" href="{{url("/addstore/create")}}">เพิ่มข้อมูลร้าน</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/admin/create">เพิ่มหน้าเว็บ</a>
+              <a class="nav-link" href="/admin/create">เพิ่มหน้าเว็บ(จังหวัดอื่นๆ)</a>
             </li>    
           </ul>
           <ul class="navbar-nav ml-auto">

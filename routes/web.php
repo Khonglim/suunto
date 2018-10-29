@@ -20,7 +20,9 @@ Route::get('/ProvinceShow', 'ShowController@province');
 Route::get('/BkkShow', 'ShowController@bkk');
 
 Route::get('/BtsShow', 'BkkController@BtsShow');
-
+Route::get('/MrtShow', 'BkkController@MrtShow');
+Route::get('/ShopShow', 'BkkController@ShopShow');
+Route::get('/OtherShow', 'BkkController@OtherShow');
 
 Route::get('/SearchProvince/{province}', 'SearchController@index');
 
