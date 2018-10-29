@@ -114,8 +114,10 @@
                                                                                 <div class="form-row">
                                                                                           <div class="col-md-12 mb-3">
                                                                                                 <label for="validationTooltip01">Address(*)</label>
-                                                                                            <input type="text" name="address" id="address" class="form-control" value="{{ old('address') }}" required>
-                                                                                                </div>
+                                                                                         
+                                                                                               <textarea name="address" id="address" cols="10" rows="5" class="form-control" value="{{ old('address') }}" required></textarea>
+                                                                                          
+                                                                                          </div>
                                                                                           </div>
                                                                                           <div class="form-row">
                                                                                                       <div class="col-md-12 mb-3">
