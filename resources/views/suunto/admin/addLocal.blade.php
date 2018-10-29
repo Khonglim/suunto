@@ -3,7 +3,7 @@
 
             <div class="container">
                         <div class="row justify-content-center">
-                                    <div class="col-md-6 bg-light p-5 rounded mt-5">
+                                    <div class="col-md-8 bg-light p-5 rounded mt-5">
                                             
                                           
                                           <h5 class="text-center text-light bg-success mb-2 p-2 rounded lead" id="reult">เพิ่มจังหวัดอื่นๆ</h5>
@@ -22,8 +22,8 @@
 
                                                           </select>
                                                         </div>
-                                                        <div class="col-md-4 mb-3">
-                                                          <label for="validationTooltip02">อัพโหลดรูปภาพ</label>
+                                                        <div class="col-md-6 mb-3">
+                                                          <label for="validationTooltip02">อัพโหลดรูปภาพ <br> <strong class="text-danger">(*ขนาดรูปภาพจำเป็นต้อง 2000 x 600 px)</strong></label>
                                                       <input type="file" name="image" id="image" required>
                                                          
                                                         </div>
