@@ -14,8 +14,8 @@
                                                 </div>
                                                 <div class="col-md-5 mb-3">
                                                   <label for="validationTooltip02">อัพโหลดรูปภาพ(*)</label>
-                                              <input type="file" name="image" id="image" required value="{{ old('image') }}">
-                                                 <label for="">{{$deale->picture_1}}</label>
+                                              <input type="file" name="image" id="image" >
+                                                 <label for="">{{$deale->picture_1}} (รูปภาพเดิม)</label>
                                                 </div>
                                       </div>
                                       <div class="form-row">
