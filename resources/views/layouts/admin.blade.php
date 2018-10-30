@@ -98,6 +98,7 @@
  $(document).ready(function() {
     $('#store').DataTable();
     $('#add_locaal').DataTable();
+    $('#onlineTable').DataTable();
     
 } );
 $(document).ready(function() {

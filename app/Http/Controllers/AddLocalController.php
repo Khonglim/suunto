@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Province;
 use App\AddLocal;
 use App\Deale;
+use App\Online;
 use DB;
 use Illuminate\Support\Facades\Input;
 class AddLocalController extends Controller
@@ -24,9 +25,13 @@ class AddLocalController extends Controller
     {
         $dealer = Deale::all();
         $addLocal = AddLocal::all();
+        $online = Online::all();
+
         $data = array(
             'addLocal' =>  $addLocal,
-            'dealer' =>  $dealer
+            'dealer' =>  $dealer,
+            'online' => $online
+
         );
         return view('suunto.admin.home',$data);
     }

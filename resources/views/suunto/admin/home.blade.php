@@ -85,7 +85,7 @@
 
 <div class="row justify-content-center">
             <div class="col-md-12 bg-light p-5 rounded mt-2">
-      <h5 class="text-center text-light bg-success mb-2 p-2 rounded lead" id="reult">ข้อมูลเพิ่มจังหวัดหน้าเว็บ</h5>
+      <h5 class="text-center text-light bg-info mb-2 p-2 rounded lead" id="reult">ข้อมูลเพิ่มจังหวัดหน้าเว็บ</h5>
              <div class="table-wrapper-scroll-y">
 <table id="add_locaal" class="table table-striped table-bordered" style="width:100%">
       <thead>
@@ -159,6 +159,100 @@
       </div>
 </div>
 </div>
+
+<div class="row justify-content-center">
+    <div class="col-md-12 bg-light p-5 rounded mt-2">
+<h5 class="text-center text-light bg-secondary mb-2 p-2 rounded lead" id="reult">ข้อมูลเพิ่มหมวดขายสินค้าออนไลน์</h5>
+     <div class="table-wrapper-scroll-y">
+<table id="onlineTable" class="table table-striped table-bordered" style="width:100%">
+<thead>
+  <tr>
+      <th>ชื่อ</th>
+     
+      <th>ลบ</th>
+    
+  </tr>
+</thead>
+<tbody>
+    @foreach ($online as $item )
+  <tr>
+      
+    <td class="text-nowrap"  >{{$item->name_online}}</td>
+
+    <td class="text-nowrap"  align="center">
+          
+           
+            <a  href="#"  data-toggle="modal" data-target="#myModal{{$item->id}}"><i data-feather="trash-2" width="15px"></i></a>
+          <!-- The Modal -->
+<div class="modal" id="myModal{{$item->id}}">
+<div class="modal-dialog">
+  <div class="modal-content">
+  
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 class="modal-title">ลบข้อมูล</h4>
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+    
+    <!-- Modal body -->
+    <div class="modal-body">
+      {{ Form::open(['route' => ['online.destroy',$item->id, 'method' => "DELETE"] ]) }}
+      <input type="hidden" name="_method" value="delete" />
+              
+              
+              
+              
+                
+          <p>คุณต้องการลบหน้าเว็บ {{$item->name_online }}ใช่หรือไม่!!!!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="summit" class="btn btn-danger">ลบ</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">ยกเลิก</button>
+          </div>
+          {{ Form::close() }}
+    
+  </div>
+</div>
+</div>
+
+
+    </td>
+
+    
+     
+  </tr>
+  @endforeach
+
+</tbody>
+<tfoot>
+  <tr>
+      <th>ชื่อ</th>
+          <th>ลบ</th>
+  </tr>
+</tfoot>
+</table>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </div> 
 
