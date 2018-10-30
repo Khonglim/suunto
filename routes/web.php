@@ -12,7 +12,7 @@
 */
 Route::resource('admin','AddLocalController');
 Route::resource('addstore','AddstoreController');
-
+Route::resource('online','OnlineController');
 
 Route::get('/', function () {
     return view('suunto.index');

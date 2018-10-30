@@ -14,8 +14,8 @@
                                             <input type="text" name="store_name" id="store_name" class="form-control" value="{{ old('name') }}" required>
                                                 </div>
                                                 <div class="col-md-5 mb-3">
-                                                  <label for="validationTooltip02">อัพโหลดรูปภาพ(*)</label>
-                                              <input type="file" name="image" id="image" required value="{{ old('image') }}">
+                                                  <label for="validationTooltip02">อัพโหลดรูปภาพ(*)<small class="text-danger"><strong>ขนาดรูปต้อง 600 x 450 px </strong></small> </label>
+                                              <input type="file" name="image" id="image" required >
                                                  
                                                 </div>
                                       </div>
@@ -167,7 +167,10 @@
                                                                                          </div>
                                                             </div>
                                                       
-                                                   <center><button class="btn btn-primary" type="submit" >บันทึก</button> </center>   
+                                                   <center>
+                                                     <button class="btn btn-primary" type="submit" >บันทึก</button> 
+                                                     <a href="{{url('/admin')}}"  class="btn btn-danger">ยกเลิก</a>
+                                                  </center>   
                                                     </form>
 
                                     </div>
