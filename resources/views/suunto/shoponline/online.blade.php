@@ -20,17 +20,13 @@
         <div class="clearfix">
           <div class="row clearfix">
             <div class="col-md-12 center"> <img class="image_fade" src="../images/store/online/0.jpg?v=1001" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </div>
-            <div class="center"> <a href="http://tsmactive.com/?route=product/isearch&search=suunto&description=true"> <img class="image_fade" src="{{url('images/store/online/1.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
-            <div class="center"> <a href="http://www.11street.co.th/store/MiniMallAction/getMiniMallHome.do?sellerHmpgUrl=suunto"> <img class="image_fade" src="{{url('images/store/online/2.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
-            <div class="center"> <a href="http://www.bananarun.com/catalogsearch/result/?cat=&q=suunto"> <img class="image_fade" src="{{url('images/store/online/3.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
-            <div class="center"> <a href="http://www.wemall.com/shop/suunto"> <img class="image_fade" src="{{url('images/store/online/4.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
-            <div class="center"> <a href="https://www.looksi.com/catalog/suunto/"> <img class="image_fade" src="{{url('images/store/online/5.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
-            <div class="center"> <a href="http://www.avarinshop.com/?s=suunto&product_cat=0&post_type=product"> <img class="image_fade" src="{{url('')}}../images/store/online/6.jpg?v=1001" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
-            <div class="center"> <a href="http://www.lazada.co.th/catalog/?q=suunto"> <img class="image_fade" src="{{url('/images/store/online/7.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
-            <div class="center"> <a href="https://www.thepuffinhouse.com/landing"> <img class="image_fade" src="{{url('images/store/online/8.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
-            <div class="center"> <a href="http://shoponline.bananastore.com/loadmore/?producttype=gadget&catename=smartwatch&productcat=activity-tracker"> <img class="image_fade" src="{{url('images/store/online/9.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
-            <div class="center"> <a href="#"> <img class="image_fade" src="../images/store/online/10.jpg?v=1001" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
-            <div class="center"> <a href="http://www.11street.co.th/store/MiniMallAction/getMiniMallHome.do?sellerHmpgUrl=suunto"> <img class="image_fade" src="{{url('images/store/online/11.jpg')}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div>
+
+           @foreach ($online as $item)
+           <div class="center"> <a href="{{$item->link_online}}"> <img class="image_fade" src="{{$item->image}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย"> </a> </div> 
+           @endforeach
+
+            
+          
           </div>
         </div>
       </div>

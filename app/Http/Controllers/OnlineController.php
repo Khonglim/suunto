@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
-use App\Province;
+use App\Online;
 class OnlineController extends Controller
 {
     /**
@@ -13,7 +13,12 @@ class OnlineController extends Controller
      */
     public function index()
     {
-        //
+        $online = Online::all();
+        $data = array(
+            'online' => $online
+        );
+
+        return view("suunto.shoponline.online",$data);
     }
 
     /**
@@ -23,11 +28,8 @@ class OnlineController extends Controller
      */
     public function create()
     {
-        $province = Province::all();
-           $data = array(
-            'province' =>  $province
-           );
-        return view("suunto.admin.addOnline",$data);
+       
+        return view("suunto.admin.addOnline");
     }
 
     /**
@@ -38,7 +40,16 @@ class OnlineController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $online= new Online;
+        $online->link_online = $request->online;
+        $online->name_online = $request->name_online;
+        if(Input::hasFile('image')){
+            $file=Input::file('image');
+            $online->image = $file->getClientOriginalName();
+            $file->move(public_path(). '/', $file->getClientOriginalName());
+        }
+        $online->save();
+        return redirect('admin');
     }
 
     /**
@@ -83,6 +94,7 @@ class OnlineController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $operate =   DB::table('_online')->where('id', '=',  $id)->delete();
+        return redirect('admin');
     }
 }

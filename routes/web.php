@@ -30,9 +30,7 @@ Route::get('/SearchProvince/{province}', 'SearchController@index');
 
 Auth::routes();
 
-Route::get('/online', function () {
-    return view('suunto.shoponline.online');
-});
+
 
 
 
