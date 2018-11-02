@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Suunto Store | ค้นหาตัวแทนจำหน่าย" />
+<meta property="og:url" content="http://www.suuntoth.com/store/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="SUUNTO STORE | ค้นหาตัวแทนจำหน่าย" />
+<meta property="og:description" content="SUUNTO STORE | ค้นหาตัวแทนจำหน่าย" />
+<meta property="og:image" content="http://www.suuntoth.com/store/images/suunto.jpg" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="apple-touch-icon" href="images/logo.png">
+<link rel="shortcut icon" href="images/favicon.ico">
   <link rel="stylesheet" href="{{ asset('css/css_old/bootstrap.css') }}" type="text/css"  />
   <link rel="stylesheet" href="{{ asset('css/css_old/style.css') }}" type="text/css"  />
 <link rel="stylesheet" href="{{ asset('css/css_old/dark.css') }}" type="text/css" />
@@ -50,21 +56,18 @@
 }
 .filter-button
 {
-    font-size: 18px;
-    border: 1px solid #FF0000;
-    border-radius: 5px;
+    font-size: 12px;
     text-align: center;
-    color: #FF0000;
+    color: #BEBEBE;
     margin-bottom: 30px;
 
 }
 .filter-button:hover
 {
-    font-size: 18px;
-    border: 1px solid #42B32F;
-    border-radius: 5px;
+    font-size: 12px;
+    
     text-align: center;
-    color: #ffffff;
+    color: #BEBEBE;
     background-color: #FF0000;
 
 }

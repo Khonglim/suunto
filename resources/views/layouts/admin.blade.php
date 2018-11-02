@@ -43,11 +43,11 @@
               <a class="nav-link" href="{{url("/addstore/create")}}">เพิ่มข้อมูลร้าน</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/admin/create">เพิ่มหน้าเว็บ(จังหวัดอื่นๆ)</a>
+              <a class="nav-link" href="{{url("/admin/create")}}">เพิ่มหน้าเว็บ(จังหวัดอื่นๆ)</a>
             </li>    
             <li class="nav-item">
-                    <a class="nav-link" href="/online/create">เพิ่มหมวดขายสินค้าออนไลน์</a>
-                  </li>    
+                <a class="nav-link" href="{{url('/online/create')}}">เพิ่มหมวดขายสินค้าออนไลน์</a>
+            </li>    
            
           </ul>
           <ul class="navbar-nav ml-auto">

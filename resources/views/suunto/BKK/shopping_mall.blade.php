@@ -26,64 +26,62 @@
               </div>
             </div>
           </section>
-          <div align="center">
-              <button class="btn btn-default filter-button" data-filter="all">Show  All</button>
-              <button class="btn btn-default filter-button" data-filter="pf-center">Center One Shopping Plaza</button>
-              <button class="btn btn-default filter-button" data-filter="pf-chaengwattana">Central Chaengwattana</button>
-              <button class="btn btn-default filter-button" data-filter="pf-chidlom">Central Chidlom</button>
-              <button class="btn btn-default filter-button" data-filter="pf-eastville">Central Festival EastVille</button>
-              <button class="btn btn-default filter-button" data-filter="pf-plazabangna">Central Plaza Bangna</button>
-              <button class="btn btn-default filter-button" data-filter="pf-ladprao">Central Plaza Ladprao</button>
-              <button class="btn btn-default filter-button" data-filter="pf-pinklao">Central Plaza Pinklao</button>
-              <button class="btn btn-default filter-button" data-filter="pf-plazarama2">Central Plaza Rama 2</button>
-              <button class="btn btn-default filter-button" data-filter="pf-plazarama3">Central Plaza Rama 3</button>
-              <button class="btn btn-default filter-button" data-filter="pf-centralworld">Central World</button>
-              <button class="btn btn-default filter-button" data-filter="pf-veranda">Crystal Veranda</button>
-              <button class="btn btn-default filter-button" data-filter="pf-future">Future Park Rangsit</button>
-              <button class="btn btn-default filter-button" data-filter="pf-avenueladprao">Happy Avenue Ladprao</button>
-              <button class="btn btn-default filter-button" data-filter="pf-mega">Mega Bangna</button>
-              <button class="btn btn-default filter-button" data-filter="pf-porto">Porto Chino Shopping Mall</button>
-              <button class="btn btn-default filter-button" data-filter="pf-discovery">Siam Discovery</button>
-              <button class="btn btn-default filter-button" data-filter="pf-paragon">Siam Paragon</button>
-              <button class="btn btn-default filter-button" data-filter="pf-silom">Silom Complex</button>
-              <button class="btn btn-default filter-button" data-filter="pf-terminal">Terminal 21</button>
-              <button class="btn btn-default filter-button" data-filter="pf-thanya">Thanya Park</button>
-              <button class="btn btn-default filter-button" data-filter="pf-rama">The Bright Rama 2</button>
-              <button class="btn btn-default filter-button" data-filter="pf-ratchapruek">The Crystal Ratchapruek</button>
-              <button class="btn btn-default filter-button" data-filter="pf-emporium">The Emporium</button>
-              <button class="btn btn-default filter-button" data-filter="pf-emquartier">The Emquartier</button>
-              <button class="btn btn-default filter-button" data-filter="pf-bangkapi">The Mall Bangkapi</button>
-          </div>
           <section id="content">
                   <div class="content-wrap">
                     <div class="container clearfix">
                       <div class="pricing pricing--sonam">
-                        
+                          <ul class="portfolio-filter clearfix" >
+                              <li class="activeFilter"> <a href="#"   class=" filter-button" data-filter="all">Show  All</a> </li>
+                              <li><a  href="#" class=" filter-button" data-filter="all">Show  All</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-center">Center One Shopping Plaza</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-chaengwattana">Central Chaengwattana</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-chidlom">Central Chidlom</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-eastville">Central Festival EastVille</a></li>
+                              <li><a href="#"  class=" filter-button" data-filter="pf-plazabangna">Central Plaza Bangna</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-ladprao">Central Plaza Ladprao</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-pinklao">Central Plaza Pinklao</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-plazarama2">Central Plaza Rama 2</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-plazarama3">Central Plaza Rama 3</a></li>
+                              <li><a  href="#" class=" filter-button" data-filter="pf-centralworld">Central World</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-veranda">Crystal Veranda</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-future">Future Park Rangsit</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-avenueladprao">Happy Avenue Ladprao</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-mega">Mega Bangna</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-porto">Porto Chino Shopping Mall</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-discovery">Siam Discovery</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-paragon">Siam Paragon</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-silom">Silom Complex</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-terminal">Terminal 21</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-thanya">Thanya Park</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-rama">The Bright Rama 2</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-ratchapruek">The Crystal Ratchapruek</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-emporium">The Emporium</a></li>
+                              <li><a href="#" class=" filter-button" data-filter="pf-emquartier">The Emquartier</a></li>
+                              <li> <a href="#" class=" filter-button" data-filter="pf-bangkapi">The Mall Bangkapi</a></li>
+                            </ul>
                       @foreach ($dealer as $item)
-                      
                       <div class="gallery_product  col-md-4 filter  {{$item->shopping_mall_search}}">
                         <div class="pricing--item" >
                           <h3 class="pricing--title">
-                                    {{$item->store_name}}
+                                {{$item->store_name}}
                           </h3>
                           <br>
                         <div align="center"><a href="tel: {{$item->contact_number}}"> <i class="icon-phone3" style="width:20px;"></i> <font color="#FFFFFF">
                                     {{$item->contact_number}}
-                                    </font></a> </div>
-                          
+                                    </font>
+                                  </a> 
+                                </div>
                           <div align="center"><br>
                               @if($item->facebook != '')
-                                            <a href="{{$item->facebook}}"><img src="{{url('images/facebook.png')}}" alt=""></a>
-                                            @else
-                                            <br><br>
-                                            @endif
-                           
-                          </div>
-                         
+                                  <a href="{{$item->facebook}}"><img src="{{url('images/facebook.png')}}" alt=""></a>
+                                 @else
+                                    <br>
+                                      <br>
+                              @endif
+                      
+                            </div>
                           <div align="center"><br>
-                           
-                          </div>
-                        
+                      </div>
                         <button class="pricing--action" data-toggle="modal" data-target=".detail_{{$item->id}}">Detail</button>
                           <div class="modal fade detail_{{$item->id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">

@@ -5,7 +5,7 @@
                   <div class="col-md-9 bg-light p-5 rounded mt-5">
                                           <h5 class="text-center text-light bg-success mb-5 p-2 rounded lead" id="reult">ADD STORE</h5>
 
-                                    <form  action="/addstore"  method="POST" id="form-data" enctype="multipart/form-data">
+                                    <form  action="{{url('/addstore')}}"  method="POST" id="form-data" enctype="multipart/form-data">
                                       @csrf
 
                                       <div class="form-row">

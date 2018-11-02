@@ -25,9 +25,9 @@
                         
                          
                             <a href="{{'addstore/'.$dealers->id.'/edit'}}" ><i data-feather="edit" width="15px"></i></a>
-                            <a href="" data-toggle="modal" data-target="#myModal{{$dealers->id}}"><i data-feather="trash-2" width="15px"></i></a>
+                            <a href="" data-toggle="modal" data-target="#Dealer{{$dealers->id}}"><i data-feather="trash-2" width="15px"></i></a>
                             <!-- The Modal -->
-            <div class="modal" id="myModal{{$dealers->id}}">
+            <div class="modal" id="Dealer{{$dealers->id}}">
                   <div class="modal-dialog">
                     <div class="modal-content">
                     
@@ -105,9 +105,9 @@
             <td class="text-nowrap"  align="center">
                   
                    
-                    <a  href="#"  data-toggle="modal" data-target="#myModal{{$item->id_local}}"><i data-feather="trash-2" width="15px"></i></a>
+                    <a  href="#"  data-toggle="modal" data-target="#Addlocal{{$item->id_local}}"><i data-feather="trash-2" width="15px"></i></a>
                   <!-- The Modal -->
-  <div class="modal" id="myModal{{$item->id_local}}">
+  <div class="modal" id="Addlocal{{$item->id_local}}">
         <div class="modal-dialog">
           <div class="modal-content">
           
@@ -126,7 +126,7 @@
                       
                       
                         
-                  <p>คุณต้องการลบหน้าเว็บ {{$item->store_name }}ใช่หรือไม่!!!!</p>
+                  <p>คุณต้องการลบหน้าเว็บ {{$item->province }}ใช่หรือไม่!!!!</p>
                   </div>
                   <div class="modal-footer">
                     <button type="summit" class="btn btn-danger">ลบ</button>
@@ -182,9 +182,9 @@
     <td class="text-nowrap"  align="center">
           
            
-            <a  href="#"  data-toggle="modal" data-target="#myModal{{$item->id}}"><i data-feather="trash-2" width="15px"></i></a>
+            <a  href="#"  data-toggle="modal" data-target="#Online{{$item->id}}"><i data-feather="trash-2" width="15px"></i></a>
           <!-- The Modal -->
-<div class="modal" id="myModal{{$item->id}}">
+<div class="modal" id="Online{{$item->id}}">
 <div class="modal-dialog">
   <div class="modal-content">
   

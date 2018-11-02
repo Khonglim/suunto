@@ -8,7 +8,7 @@
                                           
                                           <h5 class="text-center text-light bg-success mb-2 p-2 rounded lead" id="reult">เพิ่มจังหวัดอื่นๆ</h5>
 
-                                    <form  action="/admin"  method="POST" id="form-data" enctype="multipart/form-data">
+                                    <form  action="{{url('/admin')}}"  method="POST" id="form-data" enctype="multipart/form-data">
                                       @csrf
                                                       <div class="form-row">
                                                         <div class="col-md-6 mb-3">

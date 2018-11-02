@@ -26,15 +26,24 @@
               </div>
             </div>
           </section>
+          
           <div align="center">
-              <button class="btn btn-default filter-button" data-filter="all">Show  All</button>
-              <button class="btn btn-default filter-button" data-filter="pf-phaholyothin">MRT Phaholyothin Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-sukhumvit">MRT Sukhumvit Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-silom">MRT Silom Station</button>
+             
+              
+             
+             
           </div>
           <section id="content">
                   <div class="content-wrap">
                     <div class="container clearfix">
+                        <ul class="portfolio-filter clearfix" >
+                            <li class="activeFilter"> <a href="#"   class=" filter-button" data-filter="all">Show  All</a> </li>
+                          
+                            <li><a href="#"  class=" filter-button" data-filter="pf-phaholyothin">MRT Phaholyothin Station</a></li>
+                            <li> <a href="#" class=" filter-button" data-filter="pf-sukhumvit">MRT Sukhumvit Station</a></li>
+                            <li> <a href="#" class=" filter-button" data-filter="pf-silom">MRT Silom Station</a></li>
+                          
+                          </ul>
                       <div class="pricing pricing--sonam">
                         
                       @foreach ($dealer as $item)

@@ -26,23 +26,22 @@
               </div>
             </div>
           </section>
-          <div align="center">
-              <button class="btn btn-default filter-button" data-filter="all">Show  All</button>
-              <button class="btn btn-default filter-button" data-filter="pf-asoke">BTS Asoke Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-chidlom">BTS Chidlom Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-phrom">BTS Phrom Phong Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-phoenimit">BTS Phoenimit Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-siam">BTS Siam Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-saladaeng">BTS Saladaeng Station</button>
-              <button class="btn btn-default filter-button" data-filter="pf-victory">BTS Victory Monument Station</button>
-          </div>
+         
           <section id="content">
-                  <div class="content-wrap">
-                    <div class="container clearfix">
-                      <div class="pricing pricing--sonam">
-                        
+              <div class="content-wrap">
+                  <div class="container clearfix">
+                    <ul class="portfolio-filter clearfix" >
+                      <li class="activeFilter"> <a href="#"   class=" filter-button" data-filter="all">Show  All</a> </li>
+                      <li><a href="#" class=" filter-button" data-filter="pf-asoke">BTS Asoke Station</a></li>
+                      <li><a href="#" class=" filter-button" data-filter="pf-chidlom">BTS Chidlom Station</a></li>
+                      <li><a href="#" class=" filter-button" data-filter="pf-phrom">BTS Phrom Phong Station</a> </li>
+                      <li><a href="#" class=" filter-button" data-filter="pf-phoenimit">BTS Phoenimit Station</a></li>
+                      <li><a href="#" class=" filter-button" data-filter="pf-siam">BTS Siam Station</a></li>
+                      <li><a href="#" class=" filter-button" data-filter="pf-saladaeng">BTS Saladaeng Station</a></li>
+                      <li> <a href="#"  class=" filter-button" data-filter="pf-victory">BTS Victory Monument Station</a></li>
+                    </ul>
+              <div class="pricing pricing--sonam">
                       @foreach ($dealer as $item)
-                      
                       <div class="gallery_product  col-md-4 filter  {{$item->bts_search}}">
                         <div class="pricing--item" >
                           <h3 class="pricing--title">
@@ -65,7 +64,6 @@
                           <div align="center"><br>
                            
                           </div>
-                        
                         <button class="pricing--action" data-toggle="modal" data-target=".detail_{{$item->id}}">Detail</button>
                           <div class="modal fade detail_{{$item->id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
