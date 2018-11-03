@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="Suunto Store | ค้นหาตัวแทนจำหน่าย" />
-	<meta property="og:url" content="http://www.suuntoth.com/store/" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="SUUNTO STORE | ค้นหาตัวแทนจำหน่าย" />
-	<meta property="og:description" content="SUUNTO STORE | ค้นหาตัวแทนจำหน่าย" />
-	<meta property="og:image" content="http://www.suuntoth.com/store/images/suunto.jpg" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Suunto Store | ค้นหาตัวแทนจำหน่าย</title>
 	<link rel="apple-touch-icon" href="images/logo.png">
-	<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico">
   <link rel="stylesheet" href="{{ asset('css/css_old/bootstrap.css') }}" type="text/css"  />
   <link rel="stylesheet" href="{{ asset('css/css_old/style.css') }}" type="text/css"  />
 <link rel="stylesheet" href="{{ asset('css/css_old/dark.css') }}" type="text/css" />
