@@ -64,7 +64,7 @@
     
     text-align: center;
     color: #BEBEBE;
-    background-color: #FF0000;
+    
 
 }
 .btn-default:active .filter-button:active

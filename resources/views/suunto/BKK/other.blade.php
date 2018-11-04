@@ -97,14 +97,22 @@
                                               <br>
                                               <div align="left" style="font-size:16px; color:#333333;"><a href="{{$item->directions}}"><font color="#333333"><u>Get directions</u></font></a></div>
                                               <br>
-                                            <div align="left" style="font-size:16px; color:#333333;">
-                                                <iframe src="{{$item->map}}" width="10px" height="10px"   frameborder="0" style="border:0" allowfullscreen></iframe>
-                                                <br>
-                                              </div>
-                                              <div  align="left" style="font-size:16px; color:#333333;">
-                                                  <img src="{{$item->picture_1}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย">
-                                              
-                                              </div>
+                                              <div class="row">
+                                                  <div class="col-md-6">
+                                                  <div align="left" style="font-size:16px; color:#333333;">
+                                                    <iframe src="{{$item->map}}" width="10" height="10"   frameborder="0" style="border:0" allowfullscreen></iframe>
+                                                    <br>
+                                                  </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div  align="center" style="font-size:20px; color:#333333;">
+                                                          
+                                                            <img src="{{$item->picture_1}}" content="Suunto Store | ค้นหาตัวแทนจำหน่าย">
+                                                        
+                                                        </div>
+                                                   
+                                                  </div>
+                                                </div>
                                          
                                             
                                       
