@@ -28,10 +28,6 @@
           </section>
           
           <div align="center">
-             
-              
-             
-             
           </div>
           <section id="content">
                   <div class="content-wrap">
@@ -39,9 +35,15 @@
                         <ul class="portfolio-filter clearfix" >
                             <li class="activeFilter"> <a href="#"   class=" filter-button" data-filter="all">Show  All</a> </li>
                           
-                            <li><a href="#"  class=" filter-button" data-filter="pf-phaholyothin">MRT Phaholyothin Station</a></li>
-                            <li> <a href="#" class=" filter-button" data-filter="pf-sukhumvit">MRT Sukhumvit Station</a></li>
-                            <li> <a href="#" class=" filter-button" data-filter="pf-silom">MRT Silom Station</a></li>
+                            @foreach ($mrt_search as $mrt_searchs)
+                            <li><a href="#" class=" filter-button" data-filter="{{$mrt_searchs->mrt_search	}}">
+                              @foreach ($mrt as $mrts)
+                                   @if ($mrt_searchs->id == $mrts->id_mrt)
+                                   {{$mrts->name_mrt}}
+                                   @endif
+                              @endforeach
+                            </a></li>
+                            @endforeach
                           
                           </ul>
                       <div class="pricing pricing--sonam">

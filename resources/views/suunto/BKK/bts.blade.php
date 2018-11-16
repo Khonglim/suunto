@@ -38,15 +38,9 @@
                              @if ($bts_searchs->id == $btss->id)
                              {{$btss->name_bts}}
                              @endif
-                       
                         @endforeach
-                      
-                      
-                      
-                      
                       </a></li>
                       @endforeach
-                     
                     </ul>
               <div class="pricing pricing--sonam">
                       @foreach ($dealer as $item)

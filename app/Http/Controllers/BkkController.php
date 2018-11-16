@@ -31,10 +31,14 @@ class BkkController extends Controller
                 ->where('category', '=', 'กรุงเทพมหานครและปริมณฑล')
                 ->where('status', '=', 'T')
                 ->get();
+                $mrt_search = DB::table('mrt_search')->get();
+                $mrt = DB::table('mrt')->get();
                 $data = array(
-                    'dealer' =>   $dealer
+                    'dealer' =>   $dealer,
+                    'mrt_search' =>   $mrt_search,
+                    'mrt' =>   $mrt,
                 );
-
+               
         return view('suunto/BKK/mrt',$data);
     }
 

@@ -39,7 +39,7 @@ class Bts_searchTableSeeder extends Seeder
         ]);
         DB::table('bts_search')->insert([
 
-        	'bts_search'=>'pf-victory-monument',
+        	'bts_search'=>'pf-victory',
             
         ]);
         DB::table('bts_search')->insert([
@@ -79,7 +79,7 @@ class Bts_searchTableSeeder extends Seeder
         ]);
         DB::table('bts_search')->insert([
 
-        	'bts_search'=>'pf-phrom-phong',
+        	'bts_search'=>'pf-phrom',
             
         ]);
         DB::table('bts_search')->insert([
@@ -159,7 +159,7 @@ class Bts_searchTableSeeder extends Seeder
         ]);
         DB::table('bts_search')->insert([
 
-        	'bts_search'=>'pf-pho-nimit',
+        	'bts_search'=>'pf-phonimit',
             
         ]);
         DB::table('bts_search')->insert([
