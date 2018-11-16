@@ -36,7 +36,7 @@
 <style>
 .gallery-title
 {
-    font-size: 36px;
+    font-size: 12px;
     color: #42B32F;
     text-align: center;
     font-weight: 500;
@@ -55,7 +55,7 @@
     font-size: 12px;
     text-align: center;
     color: #BEBEBE;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
 
 }
 .filter-button:hover
@@ -70,18 +70,13 @@
 .btn-default:active .filter-button:active
 {
     background-color: #FF0000;
+	font-size: 12px;
     color: white;
 }
 
-.port-image
-{
-    width: 100%;
-}
 
-.gallery_product
-{
-    margin-bottom: 30px;
-}
+
+
 
 </style>
 </head>

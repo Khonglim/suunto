@@ -13,8 +13,12 @@ class BkkController extends Controller
                 ->where('category', '=', 'กรุงเทพมหานครและปริมณฑล')
                 ->where('status', '=', 'T')
                 ->get();
+                $bts_search = DB::table('bts_search')->get();
+                $bts = DB::table('bts')->get();
                 $data = array(
-                    'dealer' =>   $dealer
+                    'dealer' =>   $dealer,
+                    'bts_search' =>   $bts_search,
+                    'bts' =>   $bts,
                 );
 
         return view('suunto/BKK/bts',$data);

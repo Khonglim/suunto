@@ -32,13 +32,21 @@
                   <div class="container clearfix">
                     <ul class="portfolio-filter clearfix" >
                       <li class="activeFilter"> <a href="#"   class=" filter-button" data-filter="all">Show  All</a> </li>
-                      <li><a href="#" class=" filter-button" data-filter="pf-asoke">BTS Asoke Station</a></li>
-                      <li><a href="#" class=" filter-button" data-filter="pf-chidlom">BTS Chidlom Station</a></li>
-                      <li><a href="#" class=" filter-button" data-filter="pf-phrom">BTS Phrom Phong Station</a> </li>
-                      <li><a href="#" class=" filter-button" data-filter="pf-phoenimit">BTS Phoenimit Station</a></li>
-                      <li><a href="#" class=" filter-button" data-filter="pf-siam">BTS Siam Station</a></li>
-                      <li><a href="#" class=" filter-button" data-filter="pf-saladaeng">BTS Saladaeng Station</a></li>
-                      <li> <a href="#"  class=" filter-button" data-filter="pf-victory">BTS Victory Monument Station</a></li>
+                      @foreach ($bts_search as $bts_searchs)
+                      <li><a href="#" class=" filter-button" data-filter="{{$bts_searchs->bts_search	}}">
+                        @foreach ($bts as $btss)
+                             @if ($bts_searchs->id == $btss->id)
+                             {{$btss->name_bts}}
+                             @endif
+                       
+                        @endforeach
+                      
+                      
+                      
+                      
+                      </a></li>
+                      @endforeach
+                     
                     </ul>
               <div class="pricing pricing--sonam">
                       @foreach ($dealer as $item)
