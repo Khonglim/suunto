@@ -12,11 +12,6 @@ class Bts_searchTableSeeder extends Seeder
     public function run()
 
     {
-        
-        
-        
-        
-        
         DB::table('bts_search')->insert([
 
         	'bts_search'=>'pf-mo-chit',
@@ -94,6 +89,12 @@ class Bts_searchTableSeeder extends Seeder
         ]);
         DB::table('bts_search')->insert([
 
+        	'bts_search'=>'pf-phra-phanong',
+            
+        ]);
+
+        DB::table('bts_search')->insert([
+
         	'bts_search'=>'pf-on-nut',
             
         ]);
@@ -117,6 +118,13 @@ class Bts_searchTableSeeder extends Seeder
         	'bts_search'=>'pf-bang-na',
             
         ]);
+        DB::table('bts_search')->insert([
+
+        	'bts_search'=>'pf-bearing',
+            
+        ]);
+       
+       
         DB::table('bts_search')->insert([
 
         	'bts_search'=>'pf-samrong',
