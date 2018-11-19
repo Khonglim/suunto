@@ -5,8 +5,10 @@ namespace App\Exports;
 use App\Deale;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\WithHeadings;
-class UsersExport implements FromCollection, WithHeadings
+use Maatwebsite\Excel\Concerns\Exportable;
+class StoreExport implements FromCollection, WithHeadings
 {
+    use Exportable;
     /**
     * @return \Illuminate\Support\Collection
     */
@@ -18,10 +20,29 @@ class UsersExport implements FromCollection, WithHeadings
     {
         return [
             '#',
-            'Name',
-            'Email',
-            'Created At',
-            'Updated At',
+            'category',
+            'province',
+            'bts',
+            'bts_search',
+            'mrt',
+            'mrt_search',
+            'shopping_mall',
+            'shopping_mall_search',
+            'road',
+            'store_name',
+            'address',
+            'store_hours',
+            'facebook',
+            'contact_number',
+            'map',
+            'directions',
+            'picture_1',
+            'status',
+            'created_at',
+            'updated_at',
+
+
+
         ];
     }
 }

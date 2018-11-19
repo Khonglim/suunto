@@ -29,7 +29,7 @@ Route::get('/OtherShow', 'BkkController@OtherShow');
 Route::get('/SearchProvince/{province}', 'SearchController@index');
 
 Auth::routes();
-
+Route::get('/excel', 'ExcelController@export');
 
 
 

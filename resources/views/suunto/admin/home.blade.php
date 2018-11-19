@@ -77,7 +77,7 @@
                 </tr>
             </tfoot>
         </table>
-          
+      <a href="{{url('/excel')}} "  class="btn btn-success">Export Excel</a>
             </div>
       </div>
 </div> 
