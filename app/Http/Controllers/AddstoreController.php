@@ -12,6 +12,8 @@ use App\Bts_search;
 use App\Mrt_search;
 use App\ShoppingMall;//ตัวค้นหา ฟิวเตอร์
 use App\ShoppingMallTO; //ชื่อห้างร้าน
+use App\Extensions\MongoSessionStore;
+use Illuminate\Support\Facades\Session;
 use DB;
 
 class AddstoreController extends Controller
@@ -92,7 +94,7 @@ class AddstoreController extends Controller
             $file->move(public_path(). '/', $file->getClientOriginalName());
         }
         $deale->save();
-
+        Session::flash('flash_message','บันทึกข้อมูลร้านสำเร็จ สำเร็จ!!  ');
 return redirect("admin");
 
 
@@ -181,7 +183,7 @@ return redirect("admin");
             $file->move(public_path(). '/', $file->getClientOriginalName());
         }
         $deale->save();
-
+        Session::flash('flash_message','แก้ไขข้อมูลร้านสำเร็จ!! ');
 return redirect("admin");
     }
 
@@ -194,6 +196,7 @@ return redirect("admin");
     public function destroy($id)
     {
         $operate =   DB::table('dealer')->where('id', '=',  $id)->delete();
+        Session::flash('flash_message','ลบข้อมูลร้านสำเร็จ!! ');
         return redirect('admin');
     }
 }

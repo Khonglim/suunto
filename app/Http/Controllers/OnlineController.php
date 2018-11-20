@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 use App\Online;
+use App\Extensions\MongoSessionStore;
+use Illuminate\Support\Facades\Session;
 use DB;
 class OnlineController extends Controller
 {
@@ -50,6 +52,7 @@ class OnlineController extends Controller
             $file->move(public_path(). '/', $file->getClientOriginalName());
         }
         $online->save();
+        Session::flash('flash_message','บันทึก สำเร็จ!! ');
         return redirect('admin');
     }
 
@@ -72,7 +75,15 @@ class OnlineController extends Controller
      */
     public function edit($id)
     {
-        //
+        if($id !== '') {
+            $online= Online::find($id); 
+           
+            $data = array(
+                'online' =>$online
+                
+            );
+            return view('suunto/admin/editOnline',$data);
+        }
     }
 
     /**
@@ -84,7 +95,17 @@ class OnlineController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $online= Online::find($id); 
+        $online->link_online = $request->online;
+        $online->name_online = $request->name_online;
+        if(Input::hasFile('image')){
+            $file=Input::file('image');
+            $online->image = $file->getClientOriginalName();
+            $file->move(public_path(). '/', $file->getClientOriginalName());
+        }
+        $online->save();
+        Session::flash('flash_message','แก้ไขร้านออนไลน์ สำเร็จ!! ');
+        return redirect('admin');
     }
 
     /**
@@ -96,6 +117,7 @@ class OnlineController extends Controller
     public function destroy($id)
     {
         $operate =   DB::table('_online')->where('id', '=',  $id)->delete();
+        Session::flash('flash_message','ลบร้านออนไลน์สำเร็จ!! ');
         return redirect('admin');
     }
 }

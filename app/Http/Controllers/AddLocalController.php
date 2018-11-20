@@ -9,6 +9,8 @@ use App\Deale;
 use App\Online;
 use DB;
 use Illuminate\Support\Facades\Input;
+use App\Extensions\MongoSessionStore;
+use Illuminate\Support\Facades\Session;
 class AddLocalController extends Controller
 {
 
@@ -66,6 +68,7 @@ class AddLocalController extends Controller
             $file->move(public_path(). '/', $file->getClientOriginalName());
         }
         $addLocal->save();
+        Session::flash('flash_message','บันทึกข้อมูลจังหวัดสำเร็จ!! ');
         return redirect('admin');
     }
 
@@ -89,7 +92,15 @@ class AddLocalController extends Controller
      */
     public function edit($id)
     {
-        //
+        if($id !== '') {
+            $addLocal= AddLocal::find($id); 
+            $province = Province::all();
+            $data = array(
+                'addLocal' => $addLocal,
+                'province' =>  $province
+            );
+            return view('suunto/admin/editProvincia',$data);
+        }
     }
 
     /**
@@ -101,7 +112,16 @@ class AddLocalController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $addLocal= AddLocal::find($id); 
+        $addLocal->province = $request->province;
+        if(Input::hasFile('image')){
+            $file=Input::file('image');
+            $addLocal->imge = $file->getClientOriginalName();
+            $file->move(public_path(). '/', $file->getClientOriginalName());
+        }
+        $addLocal->save();
+        Session::flash('flash_message','แก้ไขข้อมูลจังหวัดสำเร็จ!! ');
+        return redirect('admin');
     }
 
     /**
@@ -112,7 +132,8 @@ class AddLocalController extends Controller
      */
     public function destroy($id)
     {
-        $operate =   DB::table('add_local')->where('id_local', '=',  $id)->delete();
+        $operate =   DB::table('add_local')->where('id', '=',  $id)->delete();
+        Session::flash('flash_message','ลบข้อจังหวัดสำเร็จ!! ');
         return redirect('admin');
     }
 }

@@ -14,7 +14,7 @@ class CreateAddLocalTable extends Migration
     public function up()
     {
         Schema::create('add_local', function (Blueprint $table) {
-            $table->increments('id_local');
+            $table->increments('id');
             $table->char('imge');
             $table->char('province');
             $table->char('status')->default('T');

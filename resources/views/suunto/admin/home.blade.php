@@ -1,9 +1,14 @@
 @extends('layouts.admin')
 @section('content')
 <div class="container">
+    @if(Session::has('flash_message') )
+   <div class="alert alert-success d-flex align-items-center"> {!! session('flash_message') !!}</div>
+   @endif
             <div class="row justify-content-center">
                   <div class="col-md-12 bg-light p-5 rounded mt-2">
             <h5 class="text-center text-light bg-success mb-2 p-2 rounded lead" id="reult">ข้อมูลหน้าร้าน</h5>
+            <a href="{{url('/excel')}} "  class="btn btn-success">Export Excel</a>
+            <br> <br>
                    <div class="table-wrapper-scroll-y">
 <table id="store" class="table table-striped table-bordered" style="width:100%">
             <thead>
@@ -77,7 +82,7 @@
                 </tr>
             </tfoot>
         </table>
-      <a href="{{url('/excel')}} "  class="btn btn-success">Export Excel</a>
+    
             </div>
       </div>
 </div> 
@@ -92,22 +97,23 @@
           <tr>
               <th>จังหวัด</th>
               <th>สถานะ</th>
-              <th>ลบ</th>
+              <th>แก้ไข/ลบ</th>
             
           </tr>
       </thead>
       <tbody>
             @foreach ($addLocal as $item )
+          
           <tr>
               
             <td class="text-nowrap"  >{{$item->province}}</td>
             <td class="text-nowrap">{{$item->status}}  </td>
             <td class="text-nowrap"  align="center">
                   
-                   
-                    <a  href="#"  data-toggle="modal" data-target="#Addlocal{{$item->id_local}}"><i data-feather="trash-2" width="15px"></i></a>
+              <a href="{{'admin/'.$item->id.'/edit'}}" ><i data-feather="edit" width="15px"></i></a>
+                    <a  href="#"  data-toggle="modal" data-target="#Addlocal{{$item->id}}"><i data-feather="trash-2" width="15px"></i></a>
                   <!-- The Modal -->
-  <div class="modal" id="Addlocal{{$item->id_local}}">
+  <div class="modal" id="Addlocal{{$item->id}}">
         <div class="modal-dialog">
           <div class="modal-content">
           
@@ -119,7 +125,7 @@
             
             <!-- Modal body -->
             <div class="modal-body">
-              {{ Form::open(['route' => ['admin.destroy',$item->id_local, 'method' => "DELETE"] ]) }}
+              {{ Form::open(['route' => ['admin.destroy',$item->id, 'method' => "DELETE"] ]) }}
               <input type="hidden" name="_method" value="delete" />
                       
                       
@@ -151,7 +157,7 @@
           <tr>
                   <th>จังหวัด</th>
                   <th>สถานะ</th>
-                  <th>ลบ</th>
+                  <th>แก้ไข/ลบ</th>
           </tr>
       </tfoot>
   </table>
@@ -169,7 +175,7 @@
   <tr>
       <th>ชื่อ</th>
      
-      <th>ลบ</th>
+      <th>แก้ไข/ลบ</th>
     
   </tr>
 </thead>
@@ -181,7 +187,7 @@
 
     <td class="text-nowrap"  align="center">
           
-           
+           <a href="{{'online/'.$item->id.'/edit'}}" ><i data-feather="edit" width="15px"></i></a>
             <a  href="#"  data-toggle="modal" data-target="#Online{{$item->id}}"><i data-feather="trash-2" width="15px"></i></a>
           <!-- The Modal -->
 <div class="modal" id="Online{{$item->id}}">
@@ -227,7 +233,7 @@
 <tfoot>
   <tr>
       <th>ชื่อ</th>
-          <th>ลบ</th>
+          <th>แก้ไข/ลบ</th>
   </tr>
 </tfoot>
 </table>
