@@ -41,8 +41,6 @@ class StoreExport implements FromCollection, WithHeadings
             'created_at',
             'updated_at',
 
-
-
         ];
     }
 }
