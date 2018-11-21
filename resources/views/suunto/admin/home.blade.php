@@ -24,7 +24,7 @@
                 @foreach ( $dealer as  $dealers)
                 <tr>
                     <td class="text-nowrap" >{{$dealers->province}}</td>
-                    <td class="text-nowrap">{{$dealers->store_name}}t</td>
+                    <td class="text-nowrap">{{$dealers->store_name}}</td>
                     <td class="text-nowrap"  align="center"><a href="{{$dealers->directions}}"><i data-feather="map-pin" width="15px"></i></a></td>
                     <td class="text-nowrap"  align="center">
                         
