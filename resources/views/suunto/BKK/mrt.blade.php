@@ -38,7 +38,7 @@
                             @foreach ($mrt_search as $mrt_searchs)
                             <li><a href="#" class=" filter-button" data-filter="{{$mrt_searchs->mrt_search	}}">
                               @foreach ($mrt as $mrts)
-                                   @if ($mrt_searchs->id == $mrts->id_mrt)
+                                   @if ($mrt_searchs->id == $mrts->id)
                                    {{$mrts->name_mrt}}
                                    @endif
                               @endforeach

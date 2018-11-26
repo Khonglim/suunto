@@ -44,14 +44,18 @@ class BkkController extends Controller
 
     
     public function ShopShow()
-    {
-        $dealer = DB::table('dealer')
+    { $shop = DB::table('shoppingmall')->get();
+      $shop_search = DB::table('shoppingmall_search')->get();
+      $dealer = DB::table('dealer')
                 ->where('shopping_mall', '!=', ' ')
                 ->where('category', '=', 'กรุงเทพมหานครและปริมณฑล')
                 ->where('status', '=', 'T')
                 ->get();
                 $data = array(
-                    'dealer' =>   $dealer
+                    'dealer' =>   $dealer,
+                    'shop'  =>$shop 
+                    ,
+                    'shop_search' => $shop_search
                 );
 
         return view('suunto/BKK/shopping_mall',$data);

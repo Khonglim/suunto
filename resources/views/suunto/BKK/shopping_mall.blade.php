@@ -32,32 +32,18 @@
                       <div class="pricing pricing--sonam">
                           <ul class="portfolio-filter clearfix" >
                               <li class="activeFilter"> <a href="#"   class=" filter-button" data-filter="all">Show  All</a> </li>
-                              <li><a  href="#" class=" filter-button" data-filter="all">Show  All</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-center">Center One Shopping Plaza</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-chaengwattana">Central Chaengwattana</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-chidlom">Central Chidlom</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-eastville">Central Festival EastVille</a></li>
-                              <li><a href="#"  class=" filter-button" data-filter="pf-plazabangna">Central Plaza Bangna</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-ladprao">Central Plaza Ladprao</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-pinklao">Central Plaza Pinklao</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-plazarama2">Central Plaza Rama 2</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-plazarama3">Central Plaza Rama 3</a></li>
-                              <li><a  href="#" class=" filter-button" data-filter="pf-centralworld">Central World</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-veranda">Crystal Veranda</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-future">Future Park Rangsit</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-avenueladprao">Happy Avenue Ladprao</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-mega">Mega Bangna</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-porto">Porto Chino Shopping Mall</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-discovery">Siam Discovery</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-paragon">Siam Paragon</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-silom">Silom Complex</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-terminal">Terminal 21</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-thanya">Thanya Park</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-rama">The Bright Rama 2</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-ratchapruek">The Crystal Ratchapruek</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-emporium">The Emporium</a></li>
-                              <li><a href="#" class=" filter-button" data-filter="pf-emquartier">The Emquartier</a></li>
-                              <li> <a href="#" class=" filter-button" data-filter="pf-bangkapi">The Mall Bangkapi</a></li>
+                           
+                              @foreach ($shop_search as $shoppingmall_searchs)
+                            <li><a href="#" class=" filter-button" data-filter="{{$shoppingmall_searchs->name_shop	}}">
+                              @foreach ($shop as $shops)
+                                   @if ($shops->id == $shoppingmall_searchs->id)
+                                   {{$shops->name_shop}}
+                                   @endif
+                              @endforeach
+                            </a></li>
+                            @endforeach
+                             
+                             
                             </ul>
                       @foreach ($dealer as $item)
                       <div class="gallery_product  col-md-4 filter  {{$item->shopping_mall_search}}">
