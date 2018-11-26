@@ -4,7 +4,7 @@
             <div class="container">
                         <div class="row justify-content-center">
                                     <div class="col-md-8 bg-light p-5 rounded mt-5">
-                                            <h5 class="text-center text-light bg-success mb-2 p-2 rounded lead" id="reult">เพิ่มสถานี  BTS</h5>
+                                            <h5 class="text-center text-light bg-success mb-2 p-2 rounded lead" id="reult">แก้ไข ห้าง</h5>
                                             {{Form::open(['route'=>['addshopmall.update',$shop->id],'method'=>'PUT','files' => true])}}
                                             @csrf
                                                         <div class="form-row">

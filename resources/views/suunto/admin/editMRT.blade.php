@@ -4,7 +4,7 @@
             <div class="container">
                         <div class="row justify-content-center">
                                     <div class="col-md-8 bg-light p-5 rounded mt-5">
-                                            <h5 class="text-center text-light bg-success mb-2 p-2 rounded lead" id="reult">เพิ่มสถานี  BTS</h5>
+                                            <h5 class="text-center text-light bg-success mb-2 p-2 rounded lead" id="reult">แก้ไขสถานี  MRT</h5>
                                             {{Form::open(['route'=>['addmrt.update',$mrt->id],'method'=>'PUT','files' => true])}}
                                             @csrf
                                                         <div class="form-row">
