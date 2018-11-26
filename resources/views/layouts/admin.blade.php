@@ -47,7 +47,17 @@
             </li>    
             <li class="nav-item">
                 <a class="nav-link" href="{{url('/online/create')}}">เพิ่มหมวดขายสินค้าออนไลน์</a>
+            </li>   
+            <li class="nav-item">
+                    <a class="nav-link" href="{{url('/addbts/create')}}">เพิ่มสถานี BTS</a>
             </li>    
+           <li class="nav-item">
+                        <a class="nav-link" href="{{url('/addmrt/create')}}">เพิ่มสถานี MRT</a>
+            </li>    
+            <li class="nav-item">
+                            <a class="nav-link" href="{{url('/addshopmall/create')}}">เพิ่มห้าง</a>
+            </li>    
+                       
            
           </ul>
           <ul class="navbar-nav ml-auto">

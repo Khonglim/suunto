@@ -31,7 +31,9 @@ Route::get('/SearchProvince/{province}', 'SearchController@index');
 Auth::routes();
 Route::get('/excel', 'ExcelController@export');
 
-
+Route::resource('addbts','AddBTSController');
+Route::resource('addmrt','AddMRTController');
+Route::resource('addshopmall','AddShopmallController');
 
 
 

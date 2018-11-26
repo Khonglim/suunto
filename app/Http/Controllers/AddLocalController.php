@@ -59,7 +59,13 @@ class AddLocalController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    {  $this->validate($request,[
+        'image' => 'required|file|mimes:jpeg,png,jpg,gif,svg|max:9000',
+
+
+        ]);
+
+        
         $addLocal= new AddLocal;
         $addLocal->province = $request->province;
         if(Input::hasFile('image')){

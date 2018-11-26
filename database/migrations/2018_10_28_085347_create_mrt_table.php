@@ -14,7 +14,7 @@ class CreateMrtTable extends Migration
     public function up()
     {
         Schema::create('mrt', function (Blueprint $table) {
-            $table->increments('id_mrt');
+            $table->increments('id');
             $table->string('name_mrt');
             $table->timestamps();
         });

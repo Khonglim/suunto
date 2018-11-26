@@ -7,8 +7,16 @@
                                             
                                           
                                           <h5 class="text-center text-light bg-success mb-2 p-2 rounded lead" id="reult">เพิ่มจังหวัดอื่นๆ</h5>
-
-                                    <form  action="{{url('/admin')}}"  method="POST" id="form-data" enctype="multipart/form-data">
+                                          @if (count($errors) > 0)
+                                          <div class="alert alert-danger">
+                                              
+                                                  @foreach ($errors->all() as $error)
+                                                      <li>{{ $error }}</li>
+                                                  @endforeach
+                                              
+                                          </div>
+                                          @endif
+                                    <form  action="{{url('/admin')}}"  method="POST" id="form-data" enctype="multipart/form-data" files="true">
                                       @csrf
                                                       <div class="form-row">
                                                         <div class="col-md-6 mb-3">
