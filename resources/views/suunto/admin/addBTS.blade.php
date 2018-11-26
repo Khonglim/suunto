@@ -10,7 +10,7 @@
                                                         <div class="form-row">
                                                           <div class="col-md-6 mb-3">
                                                             <label for="validationTooltip01">ชื่อสถานี BTS</label>
-                                                            <input type="text" name="bts" id="bts" class="form-control">
+                                                            <input type="text" name="bts"  class="form-control">
                                                           </div>
                                                        
                                                           <div class="col-md-6 mb-3">

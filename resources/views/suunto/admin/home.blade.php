@@ -244,13 +244,210 @@
 
 
 
+<div class="row justify-content-center">
+    <div class="col-md-12 bg-light p-5 rounded mt-2">
+<h5 class="text-center text-light bg-info mb-2 p-2 rounded lead" id="reult">ข้อมูลสถานี BTS</h5>
+     <div class="table-wrapper-scroll-y">
+<table id="bts" class="table table-striped table-bordered" style="width:100%">
+<thead>
+  <tr>
+      <th>ชื่อ</th>
+     
+      <th>แก้ไข/ลบ</th>
+    
+  </tr>
+</thead>
+<tbody>
+    @foreach ($bts as $btss)
+    <tr>
+      <td class="text-nowrap">
+        {{$btss->name_bts}}
+      </td>
+      <td class="text-nowrap" align="center">
+          <a href="{{'addbts/'.$btss->id.'/edit'}}" ><i data-feather="edit" width="15px"></i></a>
+          <a  href="#"  data-toggle="modal" data-target="#BTS{{$btss->id}}"><i data-feather="trash-2" width="15px"></i></a>
+          <!-- The Modal -->
+<div class="modal" id="BTS{{$btss->id}}">
+<div class="modal-dialog">
+  <div class="modal-content">
+  
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 class="modal-title">ลบข้อมูล</h4>
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+    
+    <!-- Modal body -->
+    <div class="modal-body">
+      {{ Form::open(['route' => ['addbts.destroy',$btss->id, 'method' => "DELETE"] ]) }}
+      <input type="hidden" name="_method" value="delete" />    
+          <p>คุณต้องการลบหน้าเว็บ {{$btss->name_bts }} ใช่หรือไม่!!!!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="summit" class="btn btn-danger">ลบ</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">ยกเลิก</button>
+          </div>
+          {{ Form::close() }}
+    
+  </div>
+</div>
+</div>
+
+      </td>
+    </tr>
+        
+    @endforeach
+  
+
+</tbody>
+<tfoot>
+  <tr>
+      <th>ชื่อ</th>
+          <th>แก้ไข/ลบ</th>
+  </tr>
+</tfoot>
+</table>
+
+</div>
+</div>
+</div>
 
 
 
+<div class="row justify-content-center">
+    <div class="col-md-12 bg-light p-5 rounded mt-2">
+<h5 class="text-center text-light bg-warning mb-2 p-2 rounded lead" id="reult">ข้อมูลสถานี MRT</h5>
+     <div class="table-wrapper-scroll-y">
+<table id="mrt" class="table table-striped table-bordered" style="width:100%">
+<thead>
+  <tr>
+      <th>ชื่อ</th>
+     
+      <th>แก้ไข/ลบ</th>
+    
+  </tr>
+</thead>
+<tbody>
+    @foreach ($mrt as $mrts)
+    <tr>
+      <td class="text-nowrap">
+        {{$mrts->name_mrt}}
+      </td>
+      <td class="text-nowrap" align="center">
+          <a href="{{'addmrt/'.$mrts->id.'/edit'}}" ><i data-feather="edit" width="15px"></i></a>
+          <a  href="#"  data-toggle="modal" data-target="#BTS{{$mrts->id}}"><i data-feather="trash-2" width="15px"></i></a>
+          <!-- The Modal -->
+<div class="modal" id="BTS{{$mrts->id}}">
+<div class="modal-dialog">
+  <div class="modal-content">
+  
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 class="modal-title">ลบข้อมูล</h4>
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+    
+    <!-- Modal body -->
+    <div class="modal-body">
+      {{ Form::open(['route' => ['addmrt.destroy',$mrts->id, 'method' => "DELETE"] ]) }}
+      <input type="hidden" name="_method" value="delete" />    
+          <p>คุณต้องการลบหน้าเว็บ {{$mrts->name_mrt }} ใช่หรือไม่!!!!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="summit" class="btn btn-danger">ลบ</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">ยกเลิก</button>
+          </div>
+          {{ Form::close() }}
+    
+  </div>
+</div>
+</div>
+      </td>
+    </tr>
+        
+    @endforeach
+  
+
+</tbody>
+<tfoot>
+  <tr>
+      <th>ชื่อ</th>
+          <th>แก้ไข/ลบ</th>
+  </tr>
+</tfoot>
+</table>
+
+</div>
+</div>
+</div>
 
 
+<div class="row justify-content-center">
+    <div class="col-md-12 bg-light p-5 rounded mt-2">
+<h5 class="text-center text-light bg-danger mb-2 p-2 rounded lead" id="reult">ข้อมูลห้าง</h5>
+     <div class="table-wrapper-scroll-y">
+<table id="shop" class="table table-striped table-bordered" style="width:100%">
+<thead>
+  <tr>
+      <th>ชื่อ</th>
+     
+      <th>แก้ไข/ลบ</th>
+    
+  </tr>
+</thead>
+<tbody>
+    @foreach ($shoppingMallTO as $shoppingMallTOs)
+    <tr>
+      <td class="text-nowrap">
+        {{$shoppingMallTOs->name_shop}}
+      </td>
+      <td class="text-nowrap" align="center">
+          <a href="{{'addshopmall/'.$shoppingMallTOs->id.'/edit'}}" ><i data-feather="edit" width="15px"></i></a>
+          <a  href="#"  data-toggle="modal" data-target="#SHOP{{$shoppingMallTOs->id}}"><i data-feather="trash-2" width="15px"></i></a>
+          <!-- The Modal -->
+<div class="modal" id="SHOP{{$shoppingMallTOs->id}}">
+<div class="modal-dialog">
+  <div class="modal-content">
+  
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 class="modal-title">ลบข้อมูล</h4>
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+    
+    <!-- Modal body -->
+    <div class="modal-body">
+      {{ Form::open(['route' => ['addshopmall.destroy',$shoppingMallTOs->id, 'method' => "DELETE"] ]) }}
+      <input type="hidden" name="_method" value="delete" />    
+          <p>คุณต้องการลบหน้าเว็บ {{$shoppingMallTOs->name_shop }} ใช่หรือไม่!!!!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="summit" class="btn btn-danger">ลบ</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">ยกเลิก</button>
+          </div>
+          {{ Form::close() }}
+    
+  </div>
+</div>
+</div>
+      </td>
+    </tr>
+        
+    @endforeach
+  
 
+</tbody>
+<tfoot>
+  <tr>
+      <th>ชื่อ</th>
+          <th>แก้ไข/ลบ</th>
+  </tr>
+</tfoot>
+</table>
 
+</div>
+</div>
+</div>
 
 
 

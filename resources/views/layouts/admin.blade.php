@@ -109,7 +109,9 @@
     $('#store').DataTable();
     $('#add_locaal').DataTable();
     $('#onlineTable').DataTable();
-    
+    $('#bts').DataTable();
+    $('#mrt').DataTable();
+    $('#shop').DataTable();
 } );
 $(document).ready(function() {
     $('.js-example-basic-single').select2();

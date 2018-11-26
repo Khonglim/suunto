@@ -7,6 +7,12 @@ use App\Province;
 use App\AddLocal;
 use App\Deale;
 use App\Online;
+use App\Mrt;
+use App\Bts;
+use App\ShoppingMallTO;
+
+
+
 use DB;
 use Illuminate\Support\Facades\Input;
 use App\Extensions\MongoSessionStore;
@@ -28,11 +34,19 @@ class AddLocalController extends Controller
         $dealer = Deale::all();
         $addLocal = AddLocal::all();
         $online = Online::all();
-
+        
+        $mrt = mrt::all();
+        $bts = bts::all();
+        $shoppingMallTO = ShoppingMallTO::all();
         $data = array(
             'addLocal' =>  $addLocal,
             'dealer' =>  $dealer,
-            'online' => $online
+            'online' => $online,
+            'mrt' => $mrt
+            ,
+            'bts' =>$bts
+            ,
+            'shoppingMallTO' => $shoppingMallTO
 
         );
         return view('suunto.admin.home',$data);

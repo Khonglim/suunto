@@ -7,6 +7,7 @@ use App\Extensions\MongoSessionStore;
 use Illuminate\Support\Facades\Session;
 use App\ShoppingMall;
 use App\ShoppingMallTO;
+use DB;
 class AddShopMallController extends Controller
 {
     /**
@@ -66,7 +67,15 @@ class AddShopMallController extends Controller
      */
     public function edit($id)
     {
-        //
+        if($id !== '') {
+            $shop= ShoppingMallTO::find($id); 
+            $shop_search=ShoppingMall::find($id);
+            $data = array(
+                'shop' => $shop,
+                'shop_search' =>  $shop_search
+            );
+            return view('suunto/admin/editShop',$data);
+        }
     }
 
     /**
@@ -78,7 +87,14 @@ class AddShopMallController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $shop= ShoppingMallTO::find($id); 
+             $shop->name_shop = $request->name_shop;
+             $shop->save();
+            $shop_search=ShoppingMall::find($id);
+             $shop_search->name_shop=$request->pf;
+             $shop_search->save();
+             Session::flash('flash_message','แก้ไขข้อมูลสำเร็จ!! ');
+        return redirect('admin');
     }
 
     /**
@@ -89,6 +105,9 @@ class AddShopMallController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $operate =   DB::table('shoppingmall')->where('id', '=',  $id)->delete();
+        $operate =   DB::table('shoppingmall_search')->where('id', '=',  $id)->delete();
+        Session::flash('flash_message','ลบข้อมูลร้านสำเร็จ!! ');
+        return redirect('admin');
     }
 }

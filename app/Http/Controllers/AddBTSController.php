@@ -7,6 +7,7 @@ use App\Extensions\MongoSessionStore;
 use Illuminate\Support\Facades\Session;
 use App\Bts;
 use App\Bts_search;
+use DB;
 class AddBTSController extends Controller
 {
     /**
@@ -44,7 +45,7 @@ class AddBTSController extends Controller
              $bts_search->bts_search=$request->pf;
              $bts_search->save();
              Session::flash('flash_message','บันทึกข้อมูลสำเร็จ!! ');
-        return redirect('admin');
+             return redirect('admin');
 
     }
 
@@ -67,7 +68,15 @@ class AddBTSController extends Controller
      */
     public function edit($id)
     {
-        //
+        if($id !== '') {
+            $bts= Bts::find($id); 
+            $bts_search=Bts_search::find($id);
+            $data = array(
+                'bts' => $bts,
+                'bts_search' =>  $bts_search
+            );
+            return view('suunto/admin/editBTS',$data);
+        }
     }
 
     /**
@@ -79,7 +88,14 @@ class AddBTSController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $bts= Bts::find($id); 
+        $bts->name_bts = $request->bts;
+        $bts->save();
+        $bts_search=Bts_search::find($id);
+        $bts_search->bts_search=$request->pf;
+        $bts_search->save();
+        Session::flash('flash_message','แก้ไขข้อมูลสำเร็จ!! ');
+        return redirect('admin');
     }
 
     /**
@@ -90,6 +106,9 @@ class AddBTSController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $operate =   DB::table('bts')->where('id', '=',  $id)->delete();
+        $operate =   DB::table('bts_search')->where('id', '=',  $id)->delete();
+        Session::flash('flash_message','ลบข้อมูลร้านสำเร็จ!! ');
+        return redirect('admin');
     }
 }
