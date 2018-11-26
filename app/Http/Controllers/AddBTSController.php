@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Extensions\MongoSessionStore;
+use Illuminate\Support\Facades\Session;
+use App\Bts;
+use App\Bts_search;
 class AddBTSController extends Controller
 {
     /**
@@ -23,7 +26,7 @@ class AddBTSController extends Controller
      */
     public function create()
     {
-        //
+        return view('suunto.admin.addBTS');
     }
 
     /**
@@ -34,7 +37,15 @@ class AddBTSController extends Controller
      */
     public function store(Request $request)
     {
-        //
+             $bts = new Bts;
+             $bts->name_bts = $request->bts;
+             $bts->save();
+             $bts_search = new Bts_search;
+             $bts_search->bts_search=$request->pf;
+             $bts_search->save();
+             Session::flash('flash_message','บันทึกข้อมูลสำเร็จ!! ');
+        return redirect('admin');
+
     }
 
     /**

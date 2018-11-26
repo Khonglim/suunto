@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Extensions\MongoSessionStore;
+use Illuminate\Support\Facades\Session;
+use App\ShoppingMall;
+use App\ShoppingMallTO;
 class AddShopMallController extends Controller
 {
     /**
@@ -23,7 +26,7 @@ class AddShopMallController extends Controller
      */
     public function create()
     {
-        //
+        return view('suunto.admin.addShopMall');
     }
 
     /**
@@ -34,7 +37,14 @@ class AddShopMallController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $shop = new ShoppingMallTO;
+             $shop->name_shop = $request->shop;
+             $shop->save();
+             $shop_search = new ShoppingMall;
+             $shop_search->name_shop=$request->pf;
+             $shop_search->save();
+             Session::flash('flash_message','บันทึกข้อมูลสำเร็จ!! ');
+        return redirect('admin');
     }
 
     /**

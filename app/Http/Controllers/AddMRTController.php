@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Extensions\MongoSessionStore;
+use Illuminate\Support\Facades\Session;
+use App\Mrt;
+use App\Mrt_search;
 class AddMRTController extends Controller
 {
     /**
@@ -23,7 +26,7 @@ class AddMRTController extends Controller
      */
     public function create()
     {
-        //
+        return view('suunto.admin.addMRT');
     }
 
     /**
@@ -34,7 +37,14 @@ class AddMRTController extends Controller
      */
     public function store(Request $request)
     {
-        //
+             $mrt = new Mrt;
+             $mrt->name_mrt = $request->mrt;
+             $mrt->save();
+             $mrt_search = new Mrt_search;
+             $mrt_search->mrt_search=$request->pf;
+             $mrt_search->save();
+             Session::flash('flash_message','บันทึกข้อมูลสำเร็จ!! ');
+        return redirect('admin');
     }
 
     /**
