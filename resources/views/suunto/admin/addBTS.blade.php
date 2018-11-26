@@ -10,12 +10,12 @@
                                                         <div class="form-row">
                                                           <div class="col-md-6 mb-3">
                                                             <label for="validationTooltip01">ชื่อสถานี BTS</label>
-                                                            <input type="text" name="bts"  class="form-control">
+                                                            <input type="text" name="bts"  class="form-control" required>
                                                           </div>
                                                        
                                                           <div class="col-md-6 mb-3">
                                                                 <label for="validationTooltip01">ตัวค้นหา</label>
-                                                                <input type="text" name="pf" id="pf" class="form-control" placeholder="pf-exxxx">
+                                                                <input type="text" name="pf" id="pf" class="form-control" placeholder="pf-exxxx" required>
                                                               </div>
                                                         </div>
                                                        

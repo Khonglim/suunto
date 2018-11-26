@@ -11,7 +11,7 @@
                                                                 <div class="form-row">
                                                                   <div class="col-md-6 mb-3">
                                                                     <label for="validationTooltip01">ชื่อห้าง</label>
-                                                                    <input type="text" name="shop" id="mrt" class="form-control">
+                                                                    <input type="text" name="shop" id="mrt" class="form-control" required>
                                                                   </div>
                                                                
                                                                   <div class="col-md-6 mb-3">
